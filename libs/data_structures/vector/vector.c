@@ -3,9 +3,6 @@
 //
 
 #include "vector.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <malloc.h>
 
 vector createVector(size_t n) {
     int *pointerToBeginning = (int *) malloc(sizeof(int) * n);
@@ -36,11 +33,14 @@ void clear(vector *v) {
 }
 
 void shrinkToFit(vector *v) {
-    v->data = (int *) realloc(v->data, sizeof(int) * v->size);
+    reserve(v, v->size);
 }
 
 void deleteVector(vector *v) {
     free(v->data);
+    v->data = NULL;
+    v->size = 0;
+    v->capacity = 0;
 }
 
 bool isEmpty(vector *v) {
@@ -56,18 +56,12 @@ int getVectorValue(vector *v, size_t i) {
 }
 
 void pushBack(vector *v, int x) {
-    if (isEmpty(v)) {
-        reserve(v, ++v->capacity);
-        v->data[v->size] = x;
-        v->size++;
-    } else if (isFull(v)) {
+    if (isEmpty(v))
+        reserve(v, 1);
+    else if (isFull(v))
         reserve(v, v->capacity * 2);
-        v->data[v->size] = x;
-        v->size++;
-    } else {
-        v->data[v->size] = x;
-        v->size++;
-    }
+    v->data[v->size] = x;
+    v->size++;
 }
 
 void popBack(vector *v) {
@@ -83,6 +77,7 @@ int *atVector(vector *v, size_t index) {
         fprintf(stderr, "IndexError: a[%zu] is not exists", index);
         exit(1);
     }
+
     return &v->data[index];
 }
 
