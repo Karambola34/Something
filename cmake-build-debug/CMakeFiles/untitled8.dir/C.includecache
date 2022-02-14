@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/averk/CLionProjects/untitled8/libs/data_structures/vector/vector.c
-vector.h
-C:/Users/averk/CLionProjects/untitled8/libs/data_structures/vector/vector.h
+C:/Users/averk/CLionProjects/untitled8/libs/data_structures/matrix/matrix.h
+malloc.h
+-
 stdio.h
 -
 stdlib.h
 -
-malloc.h
+stdbool.h
 -
 
-C:/Users/averk/CLionProjects/untitled8/libs/data_structures/vector/vector.h
-stdlib.h
--
-stdbool.h
+C:/Users/averk/CLionProjects/untitled8/main.c
+libs/data_structures/matrix/matrix.h
+C:/Users/averk/CLionProjects/untitled8/libs/data_structures/matrix/matrix.h
+assert.h
 -
 

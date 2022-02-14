@@ -1,81 +1,47 @@
 
-#include "libs/data_structures/vector/vector.h"
+#include "libs/data_structures/matrix/matrix.h"
 #include <assert.h>
 
 
-void test_pushBack_emptyVector() {
-    vector v = createVector(0);
-    pushBack(&v, 5);
-    assert(v.capacity == 1);
-    assert(v.data[0] == 5);
-    assert(v.size == 1);
-    deleteVector(&v);
+void swapMinMax(matrix m) {
+    swapRows(m, getMinValuePos(m).rowIndex, getMaxValuePos(m).rowIndex);
 }
 
-void test_pushBack_fullVector() {
-    vector v = createVector(2);
-    v.size = 2;
-    pushBack(&v, 5);
-    assert(v.capacity == 4);
-    assert(v.data[2] == 5);
-    assert(v.size == 3);
-    deleteVector(&v);
+void test_swapRowsOfMinMax1() {
+    matrix m = createMatrixFromArray(
+            (int[]) {
+                    1, 2, 3,
+                    4, 5, 6,
+                    7, 8, 9,
+            },
+            3, 3);
+    swapMinMax(m);
+    assert(m.values[0][0] == 7 && m.values[2][0] == 1);
 }
 
-void test_popBack_notEmptyVector() {
-    vector v = createVector(0);
-    pushBack(&v, 10);
-    assert (v.size == 1);
-    popBack(&v);
-    assert (v.size == 0);
-    assert (v.capacity == 1);
+void test_swapRowsOfMinMax2() {
+    matrix m = createMatrixFromArray(
+            (int[]) {
+                    1, 2, 3,
+                    4, 9, 6,
+                    7, 8, 5,
+            },
+            3, 3);
+    swapMinMax(m);
+    assert(m.values[0][0] == 4 && m.values[1][0] == 1);
 }
 
-void test_atVector_notEmptyVector() {
-    vector v = createVector(4);
-    pushBack(&v, 5);
-    pushBack(&v, 8);
-    assert(&v.data[1] == atVector(&v, 1));
-    deleteVector(&v);
+void test_swapRowsOfMinMax() {
+    test_swapRowsOfMinMax1();
+    test_swapRowsOfMinMax2();
 }
-
-void test_atVector_requestToLastElement() {
-    vector v = createVector(4);
-    pushBack(&v, 0);
-    pushBack(&v, 4);
-    pushBack(&v, 5);
-    pushBack(&v, 1);
-    assert(&v.data[3] == atVector(&v, 3));
-    deleteVector(&v);
-}
-
-void test_back_oneElementInVector() {
-    vector v = createVector(0);
-    pushBack(&v, 8);
-    assert(back(&v) == &v.data[0]);
-    deleteVector(&v);
-}
-
-void test_front_oneElementInVector() {
-    vector v = createVector(0);
-    pushBack(&v, 8);
-    assert(front(&v) == &v.data[0]);
-    deleteVector(&v);
-}
-
 
 void test() {
-    test_pushBack_emptyVector();
-    test_pushBack_fullVector();
-    test_popBack_notEmptyVector();
-    test_atVector_notEmptyVector();
-    test_atVector_requestToLastElement();
-    test_back_oneElementInVector();
-    test_front_oneElementInVector();
-    // последующие тесты
+    test_swapRowsOfMinMax();
+
 }
 
 int main() {
     test();
+
     return 0;
-}

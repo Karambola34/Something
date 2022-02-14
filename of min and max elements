@@ -1,0 +1,51 @@
+[33mcommit 1a58894dd0a6e09fb53c3a31f1475b563a89df1e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Karambola <averkiev.yura34@gmail.com>
+Date:   Tue Feb 8 21:04:40 2022 +0300
+
+    refactoring
+
+ libs/data_structures/vector/vector.c | 25 [32m++++++++++[m[31m---------------[m
+ libs/data_structures/vector/vector.h | 16 [32m++++++++++++++++[m
+ 2 files changed, 26 insertions(+), 15 deletions(-)
+
+[33mcommit 99c9fd98d6d46ca1cbf44e5f3565145b4a2196ce[m
+Author: Karambola <averkiev.yura34@gmail.com>
+Date:   Sun Feb 6 02:49:01 2022 +0300
+
+    append access functions
+
+ libs/data_structures/vector/vector.c | 16 [32m+++++++++++++++[m
+ libs/data_structures/vector/vector.h |  6 [32m++++++[m
+ main.c                               | 38 [32m+++++++++++++++++++++++++++++++++++[m[31m-[m
+ 3 files changed, 59 insertions(+), 1 deletion(-)
+
+[33mcommit 96d1ea707914c4d5ef9e61aeec60d867ae38354a[m
+Author: Karambola <averkiev.yura34@gmail.com>
+Date:   Sat Feb 5 23:45:37 2022 +0300
+
+    append push / pop functions
+
+ libs/data_structures/vector/vector.c | 48 [32m+++++++++++++++++++++++++++++++[m[31m-----[m
+ libs/data_structures/vector/vector.h | 13 [32m+++++++++[m[31m-[m
+ main.c                               | 45 [32m+++++++++++++++++++++++++++++[m[31m----[m
+ 3 files changed, 94 insertions(+), 12 deletions(-)
+
+[33mcommit 102afa2e9fce332f31ef9169161885ae617738e9[m
+Author: Karambola <averkiev.yura34@gmail.com>
+Date:   Fri Feb 4 02:02:59 2022 +0300
+
+     memory usage of vector
+
+ libs/data_structures/vector/vector.c | 43 [32m++++++++++++++++++++++++++++++++++++[m
+ libs/data_structures/vector/vector.h | 25 [32m+++++++++++++++++++++[m
+ main.c                               |  8 [32m+++++[m[31m--[m
+ 3 files changed, 74 insertions(+), 2 deletions(-)
+
+[33mcommit c57d479aa8ea91bc8ed760b8051eb8656ba5dbbd[m
+Author: Karambola <averkiev.yura34@gmail.com>
+Date:   Wed Feb 2 20:29:19 2022 +0300
+
+    first commit
+
+ main.c | 6 [32m++++++[m
+ 1 file changed, 6 insertions(+)

@@ -91,21 +91,66 @@ CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\averk\CLionProjects\untitled8\libs\data_structures\vector\vector.c -o CMakeFiles\untitled8.dir\libs\data_structures\vector\vector.c.s
 
+CMakeFiles/untitled8.dir/libs/algorithms/algorithm.c.obj: CMakeFiles/untitled8.dir/flags.make
+CMakeFiles/untitled8.dir/libs/algorithms/algorithm.c.obj: ../libs/algorithms/algorithm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\averk\CLionProjects\untitled8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/untitled8.dir/libs/algorithms/algorithm.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\untitled8.dir\libs\algorithms\algorithm.c.obj -c C:\Users\averk\CLionProjects\untitled8\libs\algorithms\algorithm.c
+
+CMakeFiles/untitled8.dir/libs/algorithms/algorithm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled8.dir/libs/algorithms/algorithm.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\averk\CLionProjects\untitled8\libs\algorithms\algorithm.c > CMakeFiles\untitled8.dir\libs\algorithms\algorithm.c.i
+
+CMakeFiles/untitled8.dir/libs/algorithms/algorithm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled8.dir/libs/algorithms/algorithm.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\averk\CLionProjects\untitled8\libs\algorithms\algorithm.c -o CMakeFiles\untitled8.dir\libs\algorithms\algorithm.c.s
+
+CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.obj: CMakeFiles/untitled8.dir/flags.make
+CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.obj: ../libs/algorithms/array/array.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\averk\CLionProjects\untitled8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\untitled8.dir\libs\algorithms\array\array.c.obj -c C:\Users\averk\CLionProjects\untitled8\libs\algorithms\array\array.c
+
+CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\averk\CLionProjects\untitled8\libs\algorithms\array\array.c > CMakeFiles\untitled8.dir\libs\algorithms\array\array.c.i
+
+CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\averk\CLionProjects\untitled8\libs\algorithms\array\array.c -o CMakeFiles\untitled8.dir\libs\algorithms\array\array.c.s
+
+CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.obj: CMakeFiles/untitled8.dir/flags.make
+CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.obj: ../libs/data_structures/matrix/matrix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\averk\CLionProjects\untitled8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\untitled8.dir\libs\data_structures\matrix\matrix.c.obj -c C:\Users\averk\CLionProjects\untitled8\libs\data_structures\matrix\matrix.c
+
+CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\averk\CLionProjects\untitled8\libs\data_structures\matrix\matrix.c > CMakeFiles\untitled8.dir\libs\data_structures\matrix\matrix.c.i
+
+CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\averk\CLionProjects\untitled8\libs\data_structures\matrix\matrix.c -o CMakeFiles\untitled8.dir\libs\data_structures\matrix\matrix.c.s
+
 # Object files for target untitled8
 untitled8_OBJECTS = \
 "CMakeFiles/untitled8.dir/main.c.obj" \
-"CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj"
+"CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj" \
+"CMakeFiles/untitled8.dir/libs/algorithms/algorithm.c.obj" \
+"CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.obj" \
+"CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.obj"
 
 # External object files for target untitled8
 untitled8_EXTERNAL_OBJECTS =
 
 untitled8.exe: CMakeFiles/untitled8.dir/main.c.obj
 untitled8.exe: CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj
+untitled8.exe: CMakeFiles/untitled8.dir/libs/algorithms/algorithm.c.obj
+untitled8.exe: CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.obj
+untitled8.exe: CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.obj
 untitled8.exe: CMakeFiles/untitled8.dir/build.make
 untitled8.exe: CMakeFiles/untitled8.dir/linklibs.rsp
 untitled8.exe: CMakeFiles/untitled8.dir/objects1.rsp
 untitled8.exe: CMakeFiles/untitled8.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\averk\CLionProjects\untitled8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable untitled8.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\averk\CLionProjects\untitled8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable untitled8.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\untitled8.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

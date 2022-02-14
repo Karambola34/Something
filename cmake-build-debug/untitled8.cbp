@@ -74,6 +74,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/algorithms/algorithm.c">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/algorithms/algorithm.h">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/algorithms/array/array.c">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/algorithms/array/array.h">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/data_structures/matrix/matrix.c">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/data_structures/matrix/matrix.h">
+			<Option target="untitled8"/>
+		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/data_structures/vector/vector.c">
 			<Option target="untitled8"/>
 		</Unit>

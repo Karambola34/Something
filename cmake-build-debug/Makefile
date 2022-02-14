@@ -128,6 +128,78 @@ untitled8/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/build
 .PHONY : untitled8/fast
 
+libs/algorithms/algorithm.obj: libs/algorithms/algorithm.c.obj
+.PHONY : libs/algorithms/algorithm.obj
+
+# target to build an object file
+libs/algorithms/algorithm.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/algorithms/algorithm.c.obj
+.PHONY : libs/algorithms/algorithm.c.obj
+
+libs/algorithms/algorithm.i: libs/algorithms/algorithm.c.i
+.PHONY : libs/algorithms/algorithm.i
+
+# target to preprocess a source file
+libs/algorithms/algorithm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/algorithms/algorithm.c.i
+.PHONY : libs/algorithms/algorithm.c.i
+
+libs/algorithms/algorithm.s: libs/algorithms/algorithm.c.s
+.PHONY : libs/algorithms/algorithm.s
+
+# target to generate assembly for a file
+libs/algorithms/algorithm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/algorithms/algorithm.c.s
+.PHONY : libs/algorithms/algorithm.c.s
+
+libs/algorithms/array/array.obj: libs/algorithms/array/array.c.obj
+.PHONY : libs/algorithms/array/array.obj
+
+# target to build an object file
+libs/algorithms/array/array.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.obj
+.PHONY : libs/algorithms/array/array.c.obj
+
+libs/algorithms/array/array.i: libs/algorithms/array/array.c.i
+.PHONY : libs/algorithms/array/array.i
+
+# target to preprocess a source file
+libs/algorithms/array/array.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.i
+.PHONY : libs/algorithms/array/array.c.i
+
+libs/algorithms/array/array.s: libs/algorithms/array/array.c.s
+.PHONY : libs/algorithms/array/array.s
+
+# target to generate assembly for a file
+libs/algorithms/array/array.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.s
+.PHONY : libs/algorithms/array/array.c.s
+
+libs/data_structures/matrix/matrix.obj: libs/data_structures/matrix/matrix.c.obj
+.PHONY : libs/data_structures/matrix/matrix.obj
+
+# target to build an object file
+libs/data_structures/matrix/matrix.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.obj
+.PHONY : libs/data_structures/matrix/matrix.c.obj
+
+libs/data_structures/matrix/matrix.i: libs/data_structures/matrix/matrix.c.i
+.PHONY : libs/data_structures/matrix/matrix.i
+
+# target to preprocess a source file
+libs/data_structures/matrix/matrix.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.i
+.PHONY : libs/data_structures/matrix/matrix.c.i
+
+libs/data_structures/matrix/matrix.s: libs/data_structures/matrix/matrix.c.s
+.PHONY : libs/data_structures/matrix/matrix.s
+
+# target to generate assembly for a file
+libs/data_structures/matrix/matrix.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.s
+.PHONY : libs/data_structures/matrix/matrix.c.s
+
 libs/data_structures/vector/vector.obj: libs/data_structures/vector/vector.c.obj
 .PHONY : libs/data_structures/vector/vector.obj
 
@@ -185,6 +257,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... untitled8
+	@echo ... libs/algorithms/algorithm.obj
+	@echo ... libs/algorithms/algorithm.i
+	@echo ... libs/algorithms/algorithm.s
+	@echo ... libs/algorithms/array/array.obj
+	@echo ... libs/algorithms/array/array.i
+	@echo ... libs/algorithms/array/array.s
+	@echo ... libs/data_structures/matrix/matrix.obj
+	@echo ... libs/data_structures/matrix/matrix.i
+	@echo ... libs/data_structures/matrix/matrix.s
 	@echo ... libs/data_structures/vector/vector.obj
 	@echo ... libs/data_structures/vector/vector.i
 	@echo ... libs/data_structures/vector/vector.s
