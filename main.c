@@ -7,7 +7,20 @@ void swapMinMax(matrix m) {
     swapRows(m, getMinValuePos(m).rowIndex, getMaxValuePos(m).rowIndex);
 }
 
-void test_swapRowsOfMinMax1() {
+int getMax(int *a, int n) {
+    int maxValue = a[0];
+    for (int i = 0; i < n; i++)
+        if (a[i] > maxValue)
+            maxValue = a[i];
+    return maxValue;
+}
+
+void sortRowsByMinElement(matrix m) {
+    insertionSortRowsMatrixByRowCriteria(m, getMax);
+}
+
+
+static void test_swapRowsOfMinMax1() {
     matrix m = createMatrixFromArray(
             (int[]) {
                     1, 2, 3,
@@ -19,7 +32,7 @@ void test_swapRowsOfMinMax1() {
     assert(m.values[0][0] == 7 && m.values[2][0] == 1);
 }
 
-void test_swapRowsOfMinMax2() {
+static void test_swapRowsOfMinMax2() {
     matrix m = createMatrixFromArray(
             (int[]) {
                     1, 2, 3,
@@ -36,8 +49,23 @@ void test_swapRowsOfMinMax() {
     test_swapRowsOfMinMax2();
 }
 
+void test_sortRowsByMinElement() {
+    matrix m = createMatrixFromArray(
+            (int[]) {
+                    7, 1, 2,
+                    1, 8, 1,
+                    3, 2, 3,
+            },
+            3, 3);
+    sortRowsByMinElement(m);
+    assert(m.values[0][0] == 3 && m.values[1][0] == 7 && m.values[2][1] == 8);
+
+}
+
+
 void test() {
     test_swapRowsOfMinMax();
+    test_sortRowsByMinElement();
 
 }
 
@@ -45,3 +73,4 @@ int main() {
     test();
 
     return 0;
+}
