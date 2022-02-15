@@ -47,6 +47,31 @@ void getSquareOfMatrixIfSymmetric(matrix *m) {
         *m = mulMatrices(*m, *m);
 }
 
+long long getSum(const int *const a, int n) {
+    long long sum = 0;
+    for (size_t i = 0; i < n; i++)
+        sum += a[i];
+    return sum;
+}
+
+bool isUnique(const long long *const a, int n) {
+    for (int i = 0; i < n-1; i++)
+        for (int j = i+1; j < n; j++)
+            if (a[i] == a[j])
+                return false;
+    return true;
+}
+
+void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
+    long long sumArray[m.nRows];
+    for (int i = 0; i < m.nRows; i++)
+        sumArray[i] = getSum(m.values[i], m.nCols);
+    if (isUnique(sumArray, m.nRows))
+        transposeSquareMatrix(m);
+
+}
+
+
 //Тесты
 static void test_swapRowsOfMinMax1() {
     matrix m = createMatrixFromArray(
@@ -125,18 +150,55 @@ static void test_getSquareOfMatrixIfSymmetric2() {
             3, 3);
     getSquareOfMatrixIfSymmetric(&m);
     assert(m.values[0][0] == 1 && m.values[0][1] == 2 && m.values[0][2] == 3 && m.values[1][0] == 4 &&
-           m.values[1][1] == 5 && m.values[1][2] == 6&&m.values[2][0]==7&&m.values[2][1]==8&&m.values[2][2]==9);
+           m.values[1][1] == 5 && m.values[1][2] == 6 && m.values[2][0] == 7 && m.values[2][1] == 8 &&
+           m.values[2][2] == 9);
 }
 
-void test_getSquareOfMatrixIfSymmetric(){
+void test_getSquareOfMatrixIfSymmetric() {
     test_getSquareOfMatrixIfSymmetric1();
     test_getSquareOfMatrixIfSymmetric2();
 }
+
+static void test_transposeIfMatrixHasNotEqualSumOfRows1(){
+    matrix m = createMatrixFromArray(
+            (int[]) {
+                    2, 2, 4,
+                    4, 5, 6,
+                    7, 8, 9,
+            },
+            3, 3);
+    transposeIfMatrixHasNotEqualSumOfRows(m);
+    assert(m.values[0][0] == 2 && m.values[0][1] == 4 && m.values[0][2] == 7 && m.values[1][0] == 2 &&
+           m.values[1][1] == 5 && m.values[1][2] == 8 && m.values[2][0] == 4 && m.values[2][1] == 6 &&
+           m.values[2][2] == 9);
+}
+
+static void test_transposeIfMatrixHasNotEqualSumOfRows2(){
+    matrix m = createMatrixFromArray(
+            (int[]) {
+                    1, 2, 3,
+                    2, 2, 2,
+                    7, 8, 9,
+            },
+            3, 3);
+    transposeIfMatrixHasNotEqualSumOfRows(m);
+    assert(m.values[0][0] == 1 && m.values[0][1] == 2 && m.values[0][2] == 3 && m.values[1][0] == 2 &&
+           m.values[1][1] == 2 && m.values[1][2] == 2 && m.values[2][0] == 7 && m.values[2][1] == 8 &&
+           m.values[2][2] == 9);
+}
+
+void test_transposeIfMatrixHasNotEqualSumOfRows(){
+    test_transposeIfMatrixHasNotEqualSumOfRows1();
+    test_transposeIfMatrixHasNotEqualSumOfRows2();
+}
+
 void test() {
     test_swapRowsOfMinMax();
     test_sortRowsByMinElement();
     test_sortColsByMinElement();
     test_getSquareOfMatrixIfSymmetric();
+    test_transposeIfMatrixHasNotEqualSumOfRows();
+
 
 }
 
