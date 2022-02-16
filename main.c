@@ -59,8 +59,8 @@ long long getSum(const int *const a, int n) {
 }
 
 bool isUnique(const long long *const a, int n) {
-    for (int i = 0; i < n-1; i++)
-        for (int j = i+1; j < n; j++)
+    for (int i = 0; i < n - 1; i++)
+        for (int j = i + 1; j < n; j++)
             if (a[i] == a[j])
                 return false;
 
@@ -75,10 +75,38 @@ void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
         transposeSquareMatrix(m);
 }
 
-bool isMutuallyInverseMatrices(matrix m1, matrix m2){
-    matrix m= mulMatrices(m1,m2);
+bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
+    matrix m = mulMatrices(m1, m2);
     return isEMatrix(m);
 }
+
+int max(int a, int b) {
+    return a > b ? a : b;
+}
+
+int min(int a, int b) {
+    return a < b ? a : b;
+}
+
+long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
+    long long diagonalSum = 0;
+    for (int i = m.nRows - 1; i > 0; i--) {
+        long long maxInLowerDiagonals = m.values[i][0];
+        for (int j = i; j < m.nRows; j++)
+            maxInLowerDiagonals = max(maxInLowerDiagonals, m.values[j][j - i]);
+        diagonalSum += maxInLowerDiagonals;
+    }
+    for (int j = 1; j < m.nCols; j++) {
+        int i = 0;
+        long long maxInUpperDiagonals = m.values[0][j];
+        for (int diagonalIndex = j; i < m.nRows & diagonalIndex < m.nCols; diagonalIndex++)
+            maxInUpperDiagonals = max(maxInUpperDiagonals, m.values[i++][diagonalIndex]);
+        diagonalSum += maxInUpperDiagonals;
+    }
+
+    return diagonalSum;
+}
+
 
 //Тесты
 static void test_swapRowsOfMinMax1() {
@@ -127,7 +155,7 @@ void test_sortColsByMinElement() {
             (int[]) {
                     3, 5, 2, 4, 3, 3,
                     2, 5, 1, 8, 2, 7,
-                    6, 1, 4, 4, 8, 3
+                    6, 1, 4, 4, 8, 3,
             },
             3, 6);
     sortColsByMinElement(m);
@@ -167,7 +195,7 @@ void test_getSquareOfMatrixIfSymmetric() {
     test_getSquareOfMatrixIfSymmetric2();
 }
 
-static void test_transposeIfMatrixHasNotEqualSumOfRows1(){
+static void test_transposeIfMatrixHasNotEqualSumOfRows1() {
     matrix m = createMatrixFromArray(
             (int[]) {
                     2, 2, 4,
@@ -181,7 +209,7 @@ static void test_transposeIfMatrixHasNotEqualSumOfRows1(){
            m.values[2][2] == 9);
 }
 
-static void test_transposeIfMatrixHasNotEqualSumOfRows2(){
+static void test_transposeIfMatrixHasNotEqualSumOfRows2() {
     matrix m = createMatrixFromArray(
             (int[]) {
                     1, 2, 3,
@@ -195,50 +223,80 @@ static void test_transposeIfMatrixHasNotEqualSumOfRows2(){
            m.values[2][2] == 9);
 }
 
-void test_transposeIfMatrixHasNotEqualSumOfRows(){
+void test_transposeIfMatrixHasNotEqualSumOfRows() {
     test_transposeIfMatrixHasNotEqualSumOfRows1();
     test_transposeIfMatrixHasNotEqualSumOfRows2();
 }
 
-static void test_isMutuallyInverseMatrices1(){
+static void test_isMutuallyInverseMatrices1() {
     matrix m1 = createMatrixFromArray(
             (int[]) {
-                    2,  5,   7,
-                    6,  3,   4,
-                    5,  -2, -3,
+                    2, 5, 7,
+                    6, 3, 4,
+                    5, -2, -3,
             },
             3, 3);
     matrix m2 = createMatrixFromArray(
             (int[]) {
-                    1,  -1,   1,
-                    -38,  41, -34,
-                    27, -29,  24,
+                    1, -1, 1,
+                    -38, 41, -34,
+                    27, -29, 24,
             },
             3, 3);
-    assert(isMutuallyInverseMatrices(m1,m2));
+    assert(isMutuallyInverseMatrices(m1, m2));
 }
 
-static void test_isMutuallyInverseMatrices2(){
+static void test_isMutuallyInverseMatrices2() {
     matrix m1 = createMatrixFromArray(
             (int[]) {
-                    2,  5,   7,
-                    6,  3,   4,
-                    5,  -2, -3,
+                    2, 5, 7,
+                    6, 3, 4,
+                    5, -2, -3,
             },
             3, 3);
     matrix m2 = createMatrixFromArray(
             (int[]) {
-                    2,  5,   7,
-                    6,  3,   4,
-                    5,  -2, -3,
+                    2, 5, 7,
+                    6, 3, 4,
+                    5, -2, -3,
             },
             3, 3);
-    assert(!isMutuallyInverseMatrices(m1,m2));
+    assert(!isMutuallyInverseMatrices(m1, m2));
 }
 
-void test_isMutuallyInverseMatrices(){
+void test_isMutuallyInverseMatrices() {
     test_isMutuallyInverseMatrices1();
     test_isMutuallyInverseMatrices2();
+}
+
+static void test_findSumOfMaxesOfPseudoDiagonal1() {
+    matrix m = createMatrixFromArray(
+            (int[]) {
+                    3, 5, 2,
+                    4, 3, 3,
+                    2, 5, 1,
+                    8, 2, 7,
+                    6, 1, 4,
+                    4, 8, 3,
+            },
+            6, 3);
+    assert(findSumOfMaxesOfPseudoDiagonal(m) == 38);
+}
+
+static void test_findSumOfMaxesOfPseudoDiagonal2() {
+    matrix m = createMatrixFromArray(
+            (int[]) {
+                    3, 5, 2, 4, 3, 3,
+                    2, 5, 1, 8, 2, 7,
+                    6, 1, 4, 4, 8, 3,
+            },
+            3, 6);
+    assert(findSumOfMaxesOfPseudoDiagonal(m) == 35);
+}
+
+void test_findSumOfMaxesOfPseudoDiagonal(){
+    test_findSumOfMaxesOfPseudoDiagonal1();
+    test_findSumOfMaxesOfPseudoDiagonal2();
 }
 
 void test() {
@@ -248,6 +306,7 @@ void test() {
     test_getSquareOfMatrixIfSymmetric();
     test_transposeIfMatrixHasNotEqualSumOfRows();
     test_isMutuallyInverseMatrices();
+    test_findSumOfMaxesOfPseudoDiagonal();
 
 
 }
