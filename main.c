@@ -107,6 +107,23 @@ long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
     return diagonalSum;
 }
 
+int getMinInArea(matrix m) {
+    position maxElementPosition = getMaxValuePos(m);
+    int minElement = m.values[maxElementPosition.rowIndex][maxElementPosition.colIndex];
+    int left = maxElementPosition.colIndex;
+    int right = left;
+    for (int i = maxElementPosition.rowIndex - 1; i >= 0; i--) {
+        if (left)
+            left--;
+        if (right != m.nCols - 1)
+            right++;
+        int minElementInArray = getMin(m.values[i] + left, right - left + 1);
+        if (minElementInArray < minElement)
+            minElement = minElementInArray;
+    }
+
+    return minElement;
+}
 
 //Тесты
 static void test_swapRowsOfMinMax1() {
@@ -294,9 +311,34 @@ static void test_findSumOfMaxesOfPseudoDiagonal2() {
     assert(findSumOfMaxesOfPseudoDiagonal(m) == 35);
 }
 
-void test_findSumOfMaxesOfPseudoDiagonal(){
+void test_findSumOfMaxesOfPseudoDiagonal() {
     test_findSumOfMaxesOfPseudoDiagonal1();
     test_findSumOfMaxesOfPseudoDiagonal2();
+}
+
+static void test_getMinInArea1() {
+    matrix m = createMatrixFromArray(
+            (int[]) {10, 7, 5, 6,
+                     3, 11, 8, 9,
+                     4, 1, 12, 2,},
+            3, 4);
+    assert(getMinInArea(m) == 5);
+}
+
+static void test_getMinInArea2() {
+    matrix m = createMatrixFromArray(
+            (int[]) {
+                    6, 8, 9, 2,
+                    7, 12, 3, 4,
+                    10, 11, 5, 1,
+            },
+            3, 4);
+    assert(getMinInArea(m) == 6);
+}
+
+void test_getMinInArea(){
+    test_getMinInArea1();
+    test_getMinInArea2();
 }
 
 void test() {
@@ -307,8 +349,7 @@ void test() {
     test_transposeIfMatrixHasNotEqualSumOfRows();
     test_isMutuallyInverseMatrices();
     test_findSumOfMaxesOfPseudoDiagonal();
-
-
+    test_getMinInArea();
 }
 
 int main() {
