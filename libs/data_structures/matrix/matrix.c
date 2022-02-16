@@ -122,12 +122,12 @@ bool twoMatricesEqual(matrix m1, matrix m2) {
         return 0;
     for (int i = 0; i < m1.nRows; i++) {
         for (int j = 0; j < m2.nRows; j++) {
-            if (m1.values[i] != m2.values[j])
-                return 0;
+            if (m1.values[i][j] != m2.values[i][j])
+                return false;
         }
     }
 
-    return 1;
+    return true;
 }
 
 bool isEMatrix(matrix m) {
@@ -135,9 +135,9 @@ bool isEMatrix(matrix m) {
     for (size_t i = 0; i < m.nRows; i++)
         for (size_t j = 0; j < m.nCols; j++)
             if ((i == j && m.values[i][j] != 1) || (i != j && m.values[i][j]))
-                return 0;
+                return false;
 
-    return 1;
+    return true;
 }
 
 bool isSymmetricMatrix(matrix m) {
