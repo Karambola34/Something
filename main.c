@@ -214,10 +214,35 @@ int getNSpecialElement(matrix m) {
             if (m.values[i][j] > maxValue)
                 maxValue = m.values[i][j];
         }
-        if (maxValue > sum-maxValue)
+        if (maxValue > sum - maxValue)
             countUnique++;
     }
+
     return countUnique;
+}
+
+//возвращает позицию первого минимального элемента матрицы m
+position getLeftMin(matrix m) {
+    int minValue = m.values[0][0];
+    position minValuePos = {0, 0};
+    for (int j = 0; j < m.nCols; j++)
+        for (int i = 0; i < m.nRows; i++)
+            if (m.values[i][j] < minValue) {
+                minValue = m.values[i][j];
+                minValuePos = (position) {i, j};
+            }
+    return minValuePos;
+}
+
+//заменяет предпоследнюю строку матрицы m размера n первым из столбцов,
+//в котором находится минимальный элемент матрицы
+void swapPenultimateRow(matrix m, int n) {
+    int arrayOfMinCol[n];
+    int minColIndex = getLeftMin(m).colIndex;
+    for (int i = 0; i < n; i++)
+        arrayOfMinCol[i] = m.values[i][minColIndex];
+    for (int j = 0; j < n; j++)
+        m.values[n - 2][j] = arrayOfMinCol[j];
 }
 
 //Тесты
@@ -730,6 +755,27 @@ void test_getNSpecialElement() {
     test_NoSpecialElement();
 }
 
+void test_swapPenultimateRow() {
+    matrix m1 = createMatrixFromArray(
+            (int[]) {
+                    1, 2, 3, 4,
+                    4, 5, 6, 8,
+                    7, 8, 1, 10,
+                    5, 0, 6, 8,
+            },
+            4, 4);
+    swapPenultimateRow(m1, m1.nRows);
+    matrix m2 = createMatrixFromArray(
+            (int[]) {
+                    1, 2, 3, 4,
+                    4, 5, 6, 8,
+                    2, 5, 8, 0,
+                    5, 0, 6, 8,
+            },
+            4, 4);
+    assert(twoMatricesEqual(m1, m2));
+}
+
 void test() {
     test_swapRows();
     test_swapColumns();
@@ -753,9 +799,11 @@ void test() {
     test_sortByDistances();
     test_countEqClassesByRowsSum();
     test_getNSpecialElement();
+    test_swapPenultimateRow();
 }
 
 int main() {
     test();
+
 
 }
