@@ -1,6 +1,7 @@
 
 #include "libs/data_structures/matrix/matrix.h"
 #include <assert.h>
+#include <math.h>
 
 //обмен строк, в которых находятся максимальный и минимальный элементы матрицы m
 void swapMinMax(matrix m) {
@@ -136,6 +137,71 @@ int getMinInArea(matrix m) {
 
     return minElement;
 }
+
+// Возвращает дистанцию от точки массива a размера n до начала координат
+float getDistance(int *a, int n) {
+    float distance = 0;
+    for (int i = 0; i < n; i++)
+        distance += (float) a[i] * a[i];
+    return sqrtf(distance);
+}
+
+// Выполняет сортировку вставками строк матрицы m по неубыванию значения функции criteria
+// применяемой для строк
+void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, int)) {
+    float rowArray[m.nRows];
+    for (int i = 0; i < m.nRows; i++) {
+        rowArray[i] = criteria(m.values[i], m.nCols);
+    }
+    for (int i = 1; i < m.nRows; i++) {
+        float t = rowArray[i];
+        int j = i;
+        while (j > 0 && rowArray[j - 1] > t) {
+            rowArray[j] = rowArray[j - 1];
+            swapRows(m, j - 1, j);
+            j--;
+        }
+        rowArray[j] = t;
+    }
+}
+
+// Упорядочивает точки матрицы m по неубыванию их расстояний до начала координат
+void sortByDistances(matrix m) {
+    insertionSortRowsMatrixByRowCriteriaF(m, getDistance);
+}
+
+int cmp_long_long(const void *pa, const void *pb) {
+    long long arg1 = *(const int *) pa;
+    int arg2 = *(const int *) pb;
+    if (arg1 < arg2) return -1;
+    if (arg1 > arg2) return 1;
+    return 0;
+}
+
+int countNUnique(long long *a, int n) {
+    long long lastSavedValue = a[0] - 1;
+    long long nUnique = 0;
+    for (size_t i = 1; i < n; i++)
+        if (a[i] == a[i - 1] && a[i] != lastSavedValue) {
+            nUnique++;
+            lastSavedValue = a[i];
+        }
+    return nUnique;
+}
+
+
+int countEqClassesByRowsSum(matrix m) {
+    long long a[m.nRows];
+    for (int i = 0; i < m.nRows; i++) {
+        long long sum = 0;
+        for (int j = 0; j < m.nCols; j++)
+            sum += m.values[i][j];
+        a[i] = sum;
+    }
+    qsort(a, m.nRows, sizeof(long long), cmp_long_long);
+    return countNUnique(a, m.nRows);
+}
+
 
 //Тесты
 
@@ -585,6 +651,39 @@ void test_getMinInArea() {
     test_getMinInArea2();
 }
 
+void test_sortByDistances() {
+    matrix m1 = createMatrixFromArray(
+            (int[]) {
+                    9, 5, 6,
+                    4, 5, 6,
+                    10, 0, 0,
+            },
+            3, 3);
+    sortByDistances(m1);
+    matrix m2 = createMatrixFromArray(
+            (int[]) {
+                    4, 5, 6,
+                    10, 0, 0,
+                    9, 5, 6,
+            },
+            3, 3);
+    assert(twoMatricesEqual(m1, m2));
+}
+
+void test_countEqClassesByRowsSum() {
+    matrix m = createMatrixFromArray(
+            (int[]) {
+                    7, 1,
+                    2, 7,
+                    5, 4,
+                    4, 3,
+                    1, 6,
+                    8, 0,
+            },
+            6, 2);
+    assert(countEqClassesByRowsSum(m) == 3);
+}
+
 void test() {
     test_swapRows();
     test_swapColumns();
@@ -605,10 +704,11 @@ void test() {
     test_isMutuallyInverseMatrices();
     test_findSumOfMaxesOfPseudoDiagonal();
     test_getMinInArea();
+    test_sortByDistances();
+    test_countEqClassesByRowsSum();
 }
 
 int main() {
     test();
 
-    return 0;
 }
