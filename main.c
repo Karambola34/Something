@@ -178,6 +178,7 @@ int cmp_long_long(const void *pa, const void *pb) {
     return 0;
 }
 
+//возвращает число неуникальных элементов массива a размера
 int countNUnique(long long *a, int n) {
     long long lastSavedValue = a[0] - 1;
     long long nUnique = 0;
@@ -189,7 +190,7 @@ int countNUnique(long long *a, int n) {
     return nUnique;
 }
 
-
+//возвращает количество классов эквивалентных строк матрицы m
 int countEqClassesByRowsSum(matrix m) {
     long long a[m.nRows];
     for (int i = 0; i < m.nRows; i++) {
@@ -202,6 +203,22 @@ int countEqClassesByRowsSum(matrix m) {
     return countNUnique(a, m.nRows);
 }
 
+//возвращает количество "особых" элементов матрицы m
+int getNSpecialElement(matrix m) {
+    int countUnique = 0;
+    for (int j = 0; j < m.nCols; j++) {
+        int maxValue = m.values[0][j];
+        int sum = m.values[0][j];
+        for (int i = 1; i < m.nRows; i++) {
+            sum += m.values[i][j];
+            if (m.values[i][j] > maxValue)
+                maxValue = m.values[i][j];
+        }
+        if (maxValue > sum-maxValue)
+            countUnique++;
+    }
+    return countUnique;
+}
 
 //Тесты
 
@@ -684,6 +701,35 @@ void test_countEqClassesByRowsSum() {
     assert(countEqClassesByRowsSum(m) == 3);
 }
 
+void test_isSpecialElement() {
+    matrix m = createMatrixFromArray(
+            (int[]) {
+                    3, 5, 5, 4,
+                    2, 3, 6, 7,
+                    12, 2, 1, 2,
+            },
+            3, 4);
+    getNSpecialElement(m);
+    assert(getNSpecialElement(m) == 2);
+}
+
+void test_NoSpecialElement() {
+    matrix m = createMatrixFromArray(
+            (int[]) {
+                    3, 5, 5, 4,
+                    2, 3, 6, 6,
+                    2, 2, 1, 2,
+            },
+            3, 4);
+    getNSpecialElement(m);
+    assert(getNSpecialElement(m) == 0);
+}
+
+void test_getNSpecialElement() {
+    test_isSpecialElement();
+    test_NoSpecialElement();
+}
+
 void test() {
     test_swapRows();
     test_swapColumns();
@@ -706,6 +752,7 @@ void test() {
     test_getMinInArea();
     test_sortByDistances();
     test_countEqClassesByRowsSum();
+    test_getNSpecialElement();
 }
 
 int main() {
