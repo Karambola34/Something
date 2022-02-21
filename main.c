@@ -92,6 +92,7 @@ void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
 //иначе возвращает значение 'ложь'
 bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
     matrix m = mulMatrices(m1, m2);
+
     return isEMatrix(m);
 }
 
@@ -144,6 +145,7 @@ float getDistance(int *a, int n) {
     float distance = 0;
     for (int i = 0; i < n; i++)
         distance += (float) a[i] * a[i];
+
     return sqrtf(distance);
 }
 
@@ -176,6 +178,7 @@ int cmp_long_long(const void *pa, const void *pb) {
     int arg2 = *(const int *) pb;
     if (arg1 < arg2) return -1;
     if (arg1 > arg2) return 1;
+
     return 0;
 }
 
@@ -188,6 +191,7 @@ int countNUnique(long long *a, int n) {
             nUnique++;
             lastSavedValue = a[i];
         }
+
     return nUnique;
 }
 
@@ -201,6 +205,7 @@ int countEqClassesByRowsSum(matrix m) {
         a[i] = sum;
     }
     qsort(a, m.nRows, sizeof(long long), cmp_long_long);
+
     return countNUnique(a, m.nRows);
 }
 
@@ -232,6 +237,7 @@ position getLeftMin(matrix m) {
                 minValue = m.values[i][j];
                 minValuePos = (position) {i, j};
             }
+
     return minValuePos;
 }
 
@@ -254,6 +260,7 @@ bool isNonDescendingSorted(const int *const a, int n) {
     for (int i = 1; i < n; i++)
         if (a[i] < a[i - 1])
             return false;
+
     return true;
 }
 
@@ -263,6 +270,7 @@ bool hasAllNonDescendingRows(matrix m) {
     for (int i = 0; i < m.nRows; i++)
         if (!isNonDescendingSorted(m.values[i], m.nCols))
             return false;
+
     return true;
 }
 
@@ -273,8 +281,39 @@ int countNonDescendingRowsMatrices(matrix *ms, int nMatrix) {
     for (int i = 0; i < nMatrix; i++)
         if (hasAllNonDescendingRows(ms[i]))
             count++;
+
     return count;
 }
+
+int countValues(const int *a, int n, int value) {
+    int count = 0;
+    for (int i = 0; i < n; i++)
+        if (a[i] == value)
+            count++;
+
+    return count;
+}
+
+int countZeroRows(matrix m) {
+    int count = 0;
+    for (int i = 0; i < m.nRows; i++) {
+        if (countValues(m.values[i], m.nCols, 0) == m.nCols)
+            count++;
+    }
+
+    return count;
+}
+
+void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
+    int arrayOfNumberOfZeroRows[nMatrix];
+    for (int i = 0; i < nMatrix; i++)
+        arrayOfNumberOfZeroRows[i] = countZeroRows(ms[i]);
+    int maxNumberOfZero = getMax(arrayOfNumberOfZeroRows, nMatrix);
+    for (int i = 0; i < nMatrix; i++)
+        if (arrayOfNumberOfZeroRows[i] == maxNumberOfZero)
+            outputMatrix(ms[i]);
+}
+
 
 //Тесты
 
@@ -824,6 +863,16 @@ void test_countNonDescendingRowsMatrices() {
     assert(countNonDescendingRowsMatrices(ms, 4) == 2);
 }
 
+void test_countZeroRows() {
+    matrix m = createMatrixFromArray(
+            (int[]) {
+                    0, 0, 0, 0,
+                    0, 0, 0, 0,
+                    5, 0, 6, 8,
+            },
+            3, 4);
+    assert(countZeroRows(m)==2);
+}
 
 void test() {
     test_swapRows();
@@ -850,6 +899,7 @@ void test() {
     test_getNSpecialElement();
     test_swapPenultimateRow();
     test_countNonDescendingRowsMatrices();
+    test_countZeroRows();
 }
 
 int main() {
