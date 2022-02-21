@@ -89,6 +89,7 @@ void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
 
 
 //возвращает значение 'истина', если матрицы m1 и m2 взаимно обратные
+//иначе возвращает значение 'ложь'
 bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
     matrix m = mulMatrices(m1, m2);
     return isEMatrix(m);
@@ -243,6 +244,36 @@ void swapPenultimateRow(matrix m, int n) {
         arrayOfMinCol[i] = m.values[i][minColIndex];
     for (int j = 0; j < n; j++)
         m.values[n - 2][j] = arrayOfMinCol[j];
+}
+
+//возвращает значение 'истина', если массив a размера n отсортирован по неубыванию,
+//иначе возвращает значение 'ложь'
+bool isNonDescendingSorted(const int *const a, int n) {
+    if (n <= 1)
+        return false;
+    for (int i = 1; i < n; i++)
+        if (a[i] < a[i - 1])
+            return false;
+    return true;
+}
+
+//возвращает значение 'истина', если все строки матрицы m отсортированы по неубыванию,
+//иначе возвращает значение 'ложь'
+bool hasAllNonDescendingRows(matrix m) {
+    for (int i = 0; i < m.nRows; i++)
+        if (!isNonDescendingSorted(m.values[i], m.nCols))
+            return false;
+    return true;
+}
+
+//возвращает число матриц в массиве матриц ms размера nMatrix,
+//строки которых упорядочены по неубыванию
+int countNonDescendingRowsMatrices(matrix *ms, int nMatrix) {
+    int count = 0;
+    for (int i = 0; i < nMatrix; i++)
+        if (hasAllNonDescendingRows(ms[i]))
+            count++;
+    return count;
 }
 
 //Тесты
@@ -776,6 +807,24 @@ void test_swapPenultimateRow() {
     assert(twoMatricesEqual(m1, m2));
 }
 
+void test_countNonDescendingRowsMatrices() {
+    matrix *ms = createArrayOfMatrixFromArray(
+            (int[]) {
+                    7, 1,
+                    1, 1,
+
+                    1, 6,
+                    2, 2,
+
+                    5, 4,
+                    2, 3,
+
+                    1, 3,
+                    7, 9,}, 4, 2, 2);
+    assert(countNonDescendingRowsMatrices(ms, 4) == 2);
+}
+
+
 void test() {
     test_swapRows();
     test_swapColumns();
@@ -800,6 +849,7 @@ void test() {
     test_countEqClassesByRowsSum();
     test_getNSpecialElement();
     test_swapPenultimateRow();
+    test_countNonDescendingRowsMatrices();
 }
 
 int main() {
