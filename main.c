@@ -285,6 +285,7 @@ int countNonDescendingRowsMatrices(matrix *ms, int nMatrix) {
     return count;
 }
 
+//возвращает количество вхождений числа value в массив a размера n
 int countValues(const int *a, int n, int value) {
     int count = 0;
     for (int i = 0; i < n; i++)
@@ -294,6 +295,7 @@ int countValues(const int *a, int n, int value) {
     return count;
 }
 
+//возвращает число нулевых строк в матрице m
 int countZeroRows(matrix m) {
     int count = 0;
     for (int i = 0; i < m.nRows; i++) {
@@ -304,6 +306,8 @@ int countZeroRows(matrix m) {
     return count;
 }
 
+
+//выводит матрицы массива матриц ms размера nMatrix, имеющие наибольшее число нулевых строк
 void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
     int arrayOfNumberOfZeroRows[nMatrix];
     for (int i = 0; i < nMatrix; i++)
@@ -314,6 +318,29 @@ void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
             outputMatrix(ms[i]);
 }
 
+//возвращает норму матрицы m
+int getNorm(matrix m) {
+    int norm = abs(m.values[0][0]);
+    for (int i = 0; i < m.nRows; i++)
+        for (int j = 0; j < m.nCols; j++) {
+            int value = abs(m.values[i][j]);
+            if (value > norm)
+                norm = value;
+        }
+
+    return norm;
+}
+
+//выводит матрицы массива матриц ms размера nMatrix, с наименьшей нормой
+void printMatrixWithMinNorm(matrix *ms, int nMatrix) {
+    int arrayOfNumberOfNorms[nMatrix];
+    for (int i = 0; i < nMatrix; i++)
+        arrayOfNumberOfNorms[i] = getNorm(ms[i]);
+    int minNumberOfNorm = getMin(arrayOfNumberOfNorms, nMatrix);
+    for (int i = 0; i < nMatrix; i++)
+        if (arrayOfNumberOfNorms[i] == minNumberOfNorm)
+            outputMatrix(ms[i]);
+}
 
 //Тесты
 
@@ -871,8 +898,21 @@ void test_countZeroRows() {
                     5, 0, 6, 8,
             },
             3, 4);
-    assert(countZeroRows(m)==2);
+    assert(countZeroRows(m) == 2);
 }
+
+void test_getNorm() {
+    matrix m = createMatrixFromArray(
+            (int[]) {
+                    9, 5, 6,
+                    4, 5, 6,
+                    -10, 8, 0,
+                    -100, 7, 26,
+            },
+            4, 3);
+    assert(getNorm(m)==100);
+}
+
 
 void test() {
     test_swapRows();
@@ -900,10 +940,10 @@ void test() {
     test_swapPenultimateRow();
     test_countNonDescendingRowsMatrices();
     test_countZeroRows();
+    test_getNorm();
 }
 
 int main() {
     test();
-
 
 }
