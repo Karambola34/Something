@@ -4,7 +4,6 @@
 
 #include "matrix.h"
 
-
 matrix getMemMatrix(int nRows, int nCols) {
     int **values = (int **) malloc(sizeof(int *) * nRows);
     for (int i = 0; i < nRows; i++)
@@ -152,6 +151,7 @@ bool isSymmetricMatrix(matrix m) {
 }
 
 void transposeSquareMatrix(matrix m) {
+    assert(m.nRows == m.nCols);
     for (size_t i = 0; i < m.nRows; i++)
         for (size_t j = 0; j < i; j++) {
             int toCopy = m.values[i][j];
