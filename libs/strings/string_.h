@@ -55,6 +55,7 @@ char* copyIf(char *beginSource, const char *endSource,char *beginDestination, in
 // заканчивая rendSource, удовлетворяющие функции-предикату f.
 char* copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int));
 
+//возвращает указатель на конец строки s
 char *getEndOfString (char *s);
 
 void assertString ( const char * expected , char * got ,

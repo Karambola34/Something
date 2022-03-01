@@ -4,7 +4,6 @@
 
 #include "removeNonLetters.h"
 
-
 void removeNonLetters(char *s) {
     char *endSource = getEndOfString(s);
     char *destination = copyIf(s, endSource, s, isgraph);
@@ -14,5 +13,5 @@ void removeNonLetters(char *s) {
 void test_removeNonLetters () {
     char s [] = " Hi123 \n\t\t273#$^&";
     removeNonLetters(s) ;
-    ASSERT_STRING("Hi273#$^&",s);
+    ASSERT_STRING("Hi123273#$^&",s);
 }

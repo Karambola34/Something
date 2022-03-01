@@ -248,6 +248,30 @@ libs/strings/string_.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/string_.c.s
 .PHONY : libs/strings/string_.c.s
 
+libs/strings/tasks/removeExtraSpaces.obj: libs/strings/tasks/removeExtraSpaces.c.obj
+.PHONY : libs/strings/tasks/removeExtraSpaces.obj
+
+# target to build an object file
+libs/strings/tasks/removeExtraSpaces.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/removeExtraSpaces.c.obj
+.PHONY : libs/strings/tasks/removeExtraSpaces.c.obj
+
+libs/strings/tasks/removeExtraSpaces.i: libs/strings/tasks/removeExtraSpaces.c.i
+.PHONY : libs/strings/tasks/removeExtraSpaces.i
+
+# target to preprocess a source file
+libs/strings/tasks/removeExtraSpaces.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/removeExtraSpaces.c.i
+.PHONY : libs/strings/tasks/removeExtraSpaces.c.i
+
+libs/strings/tasks/removeExtraSpaces.s: libs/strings/tasks/removeExtraSpaces.c.s
+.PHONY : libs/strings/tasks/removeExtraSpaces.s
+
+# target to generate assembly for a file
+libs/strings/tasks/removeExtraSpaces.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/removeExtraSpaces.c.s
+.PHONY : libs/strings/tasks/removeExtraSpaces.c.s
+
 libs/strings/tasks/removeNonLetters.obj: libs/strings/tasks/removeNonLetters.c.obj
 .PHONY : libs/strings/tasks/removeNonLetters.obj
 
@@ -320,6 +344,9 @@ help:
 	@echo ... libs/strings/string_.obj
 	@echo ... libs/strings/string_.i
 	@echo ... libs/strings/string_.s
+	@echo ... libs/strings/tasks/removeExtraSpaces.obj
+	@echo ... libs/strings/tasks/removeExtraSpaces.i
+	@echo ... libs/strings/tasks/removeExtraSpaces.s
 	@echo ... libs/strings/tasks/removeNonLetters.obj
 	@echo ... libs/strings/tasks/removeNonLetters.i
 	@echo ... libs/strings/tasks/removeNonLetters.s

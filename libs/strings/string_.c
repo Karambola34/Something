@@ -58,12 +58,14 @@ char *copy(const char *beginSource, const char *endSource,
 }
 
 char *copyIf(char *beginSource, const char *endSource, char *beginDestination, int (*f)(int)) {
-    while (beginSource != endSource)
-        if (f(*beginSource)) {
-            *beginDestination = *beginSource;
-            beginDestination++;
-            beginSource++;
-        }
+    while (beginSource != endSource) {
+        if (f(*beginSource))
+            *beginDestination++ = *beginSource;
+
+        beginSource++;
+    }
+
+
     return beginDestination;
 }
 
@@ -77,11 +79,12 @@ char *copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDesti
     return beginDestination;
 }
 
-char *getEndOfString (char *begin){
-    while(*begin!='\0')
+char *getEndOfString(char *begin) {
+    while (*begin != '\0')
         begin++;
     return begin;
 }
+
 void assertString(const char *expected, char *got, char const *fileName, char const *funcName,
                   int line) {
     if (strcmp_(expected, got)) {
