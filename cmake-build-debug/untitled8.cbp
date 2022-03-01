@@ -98,6 +98,18 @@
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/data_structures/vector/vector.h">
 			<Option target="untitled8"/>
 		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.c">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.c">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h">
+			<Option target="untitled8"/>
+		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/main.c">
 			<Option target="untitled8"/>
 		</Unit>

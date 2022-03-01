@@ -6,23 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/averk/CLionProjects/untitled8/libs/data_structures/matrix/matrix.h
-malloc.h
--
+C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
 stdio.h
 -
-stdlib.h
+memory.h
 -
-stdbool.h
--
-assert.h
+ctype.h
 -
 
-C:/Users/averk/CLionProjects/untitled8/main.c
-libs/data_structures/matrix/matrix.h
-C:/Users/averk/CLionProjects/untitled8/libs/data_structures/matrix/matrix.h
-math.h
--
-limits.h
--
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.c
+removeNonLetters.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
+
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
+../string_.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
 

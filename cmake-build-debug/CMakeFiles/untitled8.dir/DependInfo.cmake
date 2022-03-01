@@ -12,6 +12,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/averk/CLionProjects/untitled8/libs/algorithms/array/array.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/libs/data_structures/matrix/matrix.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/libs/data_structures/vector/vector.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj"
+  "C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/string_.c.obj"
+  "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/main.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

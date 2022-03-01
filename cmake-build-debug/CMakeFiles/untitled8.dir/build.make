@@ -130,13 +130,41 @@ CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\averk\CLionProjects\untitled8\libs\data_structures\matrix\matrix.c -o CMakeFiles\untitled8.dir\libs\data_structures\matrix\matrix.c.s
 
+CMakeFiles/untitled8.dir/libs/strings/string_.c.obj: CMakeFiles/untitled8.dir/flags.make
+CMakeFiles/untitled8.dir/libs/strings/string_.c.obj: ../libs/strings/string_.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\averk\CLionProjects\untitled8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/untitled8.dir/libs/strings/string_.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\untitled8.dir\libs\strings\string_.c.obj -c C:\Users\averk\CLionProjects\untitled8\libs\strings\string_.c
+
+CMakeFiles/untitled8.dir/libs/strings/string_.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled8.dir/libs/strings/string_.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\averk\CLionProjects\untitled8\libs\strings\string_.c > CMakeFiles\untitled8.dir\libs\strings\string_.c.i
+
+CMakeFiles/untitled8.dir/libs/strings/string_.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled8.dir/libs/strings/string_.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\averk\CLionProjects\untitled8\libs\strings\string_.c -o CMakeFiles\untitled8.dir\libs\strings\string_.c.s
+
+CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj: CMakeFiles/untitled8.dir/flags.make
+CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj: ../libs/strings/tasks/removeNonLetters.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\averk\CLionProjects\untitled8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\untitled8.dir\libs\strings\tasks\removeNonLetters.c.obj -c C:\Users\averk\CLionProjects\untitled8\libs\strings\tasks\removeNonLetters.c
+
+CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\averk\CLionProjects\untitled8\libs\strings\tasks\removeNonLetters.c > CMakeFiles\untitled8.dir\libs\strings\tasks\removeNonLetters.c.i
+
+CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\averk\CLionProjects\untitled8\libs\strings\tasks\removeNonLetters.c -o CMakeFiles\untitled8.dir\libs\strings\tasks\removeNonLetters.c.s
+
 # Object files for target untitled8
 untitled8_OBJECTS = \
 "CMakeFiles/untitled8.dir/main.c.obj" \
 "CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj" \
 "CMakeFiles/untitled8.dir/libs/algorithms/algorithm.c.obj" \
 "CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.obj" \
-"CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.obj"
+"CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.obj" \
+"CMakeFiles/untitled8.dir/libs/strings/string_.c.obj" \
+"CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj"
 
 # External object files for target untitled8
 untitled8_EXTERNAL_OBJECTS =
@@ -146,11 +174,13 @@ untitled8.exe: CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj
 untitled8.exe: CMakeFiles/untitled8.dir/libs/algorithms/algorithm.c.obj
 untitled8.exe: CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.obj
 untitled8.exe: CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.obj
+untitled8.exe: CMakeFiles/untitled8.dir/libs/strings/string_.c.obj
+untitled8.exe: CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj
 untitled8.exe: CMakeFiles/untitled8.dir/build.make
 untitled8.exe: CMakeFiles/untitled8.dir/linklibs.rsp
 untitled8.exe: CMakeFiles/untitled8.dir/objects1.rsp
 untitled8.exe: CMakeFiles/untitled8.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\averk\CLionProjects\untitled8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable untitled8.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\averk\CLionProjects\untitled8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable untitled8.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\untitled8.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
