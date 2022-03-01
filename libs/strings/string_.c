@@ -95,3 +95,23 @@ void assertString(const char *expected, char *got, char const *fileName, char co
     } else
         fprintf(stderr, "%s - OK\n", funcName);
 }
+
+
+int getWord(char *beginSearch, WordDescriptor *word) {
+    word->begin = findNonSpace(beginSearch);
+    if (*word->begin == '\0')
+        return 0;
+
+    word->end = findSpace(word->begin);
+
+    return 1;
+}
+
+bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
+    word->end = findNonSpaceReverse(rbegin, rend)+1;
+    if (word->end == rend)
+        return false;
+    word->begin = findSpaceReverse(word->end, rend)+1;
+
+    return true;
+}

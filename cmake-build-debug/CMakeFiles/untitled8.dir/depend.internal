@@ -16,6 +16,10 @@ CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj
 CMakeFiles/untitled8.dir/libs/strings/string_.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.c
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.obj
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.c
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h
 CMakeFiles/untitled8.dir/libs/strings/tasks/removeExtraSpaces.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.c
@@ -26,6 +30,7 @@ CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
 CMakeFiles/untitled8.dir/main.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
  C:/Users/averk/CLionProjects/untitled8/main.c

@@ -248,6 +248,30 @@ libs/strings/string_.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/string_.c.s
 .PHONY : libs/strings/string_.c.s
 
+libs/strings/tasks/digitToStartTransform.obj: libs/strings/tasks/digitToStartTransform.c.obj
+.PHONY : libs/strings/tasks/digitToStartTransform.obj
+
+# target to build an object file
+libs/strings/tasks/digitToStartTransform.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.obj
+.PHONY : libs/strings/tasks/digitToStartTransform.c.obj
+
+libs/strings/tasks/digitToStartTransform.i: libs/strings/tasks/digitToStartTransform.c.i
+.PHONY : libs/strings/tasks/digitToStartTransform.i
+
+# target to preprocess a source file
+libs/strings/tasks/digitToStartTransform.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.i
+.PHONY : libs/strings/tasks/digitToStartTransform.c.i
+
+libs/strings/tasks/digitToStartTransform.s: libs/strings/tasks/digitToStartTransform.c.s
+.PHONY : libs/strings/tasks/digitToStartTransform.s
+
+# target to generate assembly for a file
+libs/strings/tasks/digitToStartTransform.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.s
+.PHONY : libs/strings/tasks/digitToStartTransform.c.s
+
 libs/strings/tasks/removeExtraSpaces.obj: libs/strings/tasks/removeExtraSpaces.c.obj
 .PHONY : libs/strings/tasks/removeExtraSpaces.obj
 
@@ -344,6 +368,9 @@ help:
 	@echo ... libs/strings/string_.obj
 	@echo ... libs/strings/string_.i
 	@echo ... libs/strings/string_.s
+	@echo ... libs/strings/tasks/digitToStartTransform.obj
+	@echo ... libs/strings/tasks/digitToStartTransform.i
+	@echo ... libs/strings/tasks/digitToStartTransform.s
 	@echo ... libs/strings/tasks/removeExtraSpaces.obj
 	@echo ... libs/strings/tasks/removeExtraSpaces.i
 	@echo ... libs/strings/tasks/removeExtraSpaces.s

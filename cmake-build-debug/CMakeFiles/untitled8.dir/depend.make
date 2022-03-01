@@ -16,6 +16,10 @@ CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj: \
 CMakeFiles/untitled8.dir/libs/strings/string_.c.obj: \
  ../libs/strings/string_.c \
  ../libs/strings/string_.h
+CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.obj: \
+ ../libs/strings/string_.h \
+ ../libs/strings/tasks/digitToStartTransform.c \
+ ../libs/strings/tasks/digitToStartTransform.h
 CMakeFiles/untitled8.dir/libs/strings/tasks/removeExtraSpaces.c.obj: \
  ../libs/strings/string_.h \
  ../libs/strings/tasks/removeExtraSpaces.c \
@@ -26,6 +30,7 @@ CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj: \
  ../libs/strings/tasks/removeNonLetters.h
 CMakeFiles/untitled8.dir/main.c.obj: \
  ../libs/strings/string_.h \
+ ../libs/strings/tasks/digitToStartTransform.h \
  ../libs/strings/tasks/removeExtraSpaces.h \
  ../libs/strings/tasks/removeNonLetters.h \
  ../main.c
