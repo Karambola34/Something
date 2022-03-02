@@ -28,9 +28,14 @@ CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.c
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
+CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.obj
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replaceDigitsBySpaces.c
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replaceDigitsBySpaces.h
 CMakeFiles/untitled8.dir/main.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replaceDigitsBySpaces.h
  C:/Users/averk/CLionProjects/untitled8/main.c

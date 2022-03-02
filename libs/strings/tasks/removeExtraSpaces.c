@@ -24,8 +24,26 @@ void removeExtraSpaces(char *s) {
     *copyStr = '\0';
 }
 
-void test_removeExtraSpaces() {
+void test_removeAreSpaces() {
     char s[] = " one two\n  three      4 ";
     removeExtraSpaces(s);
     ASSERT_STRING("one two\n three 4", s);
+}
+
+void test_removeNoSpaces() {
+    char s[] = "onetwo\nthree4";
+    removeExtraSpaces(s);
+    ASSERT_STRING("onetwo\nthree4", s);
+}
+
+void test_removeEmpty() {
+    char s[] = "";
+    removeExtraSpaces(s);
+    ASSERT_STRING("", s);
+}
+
+void test_removeExtraSpaces(){
+    test_removeAreSpaces();
+    test_removeNoSpaces();
+    test_removeEmpty();
 }

@@ -12,11 +12,10 @@
 void digitToStartLettersFirstDigitsSecond(WordDescriptor word);
 
 
-// считывает все слова в строке sgi
+// считывает все слова в строке s
 void digitToStartForAllWords(char *s);
 
 void test_digitToStartLettersFirstDigitsSecond();
-
 
 
 #endif //UNTITLED8_DIGITTOSTARTTRANSFORM_H

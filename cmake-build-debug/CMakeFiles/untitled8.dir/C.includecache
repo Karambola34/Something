@@ -18,23 +18,11 @@ limits.h
 stdbool.h
 -
 
-C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h
-../string_.h
-C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
-
-C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.h
-../string_.h
-C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.c
+removeNonLetters.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
 
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
 ../string_.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
-
-C:/Users/averk/CLionProjects/untitled8/main.c
-libs/strings/tasks/removeNonLetters.h
-C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
-libs/strings/tasks/removeExtraSpaces.h
-C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.h
-libs/strings/tasks/digitToStartTransform.h
-C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h
 

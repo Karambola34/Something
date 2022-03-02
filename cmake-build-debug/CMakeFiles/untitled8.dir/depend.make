@@ -28,9 +28,14 @@ CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj: \
  ../libs/strings/string_.h \
  ../libs/strings/tasks/removeNonLetters.c \
  ../libs/strings/tasks/removeNonLetters.h
+CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.obj: \
+ ../libs/strings/string_.h \
+ ../libs/strings/tasks/replaceDigitsBySpaces.c \
+ ../libs/strings/tasks/replaceDigitsBySpaces.h
 CMakeFiles/untitled8.dir/main.c.obj: \
  ../libs/strings/string_.h \
  ../libs/strings/tasks/digitToStartTransform.h \
  ../libs/strings/tasks/removeExtraSpaces.h \
  ../libs/strings/tasks/removeNonLetters.h \
+ ../libs/strings/tasks/replaceDigitsBySpaces.h \
  ../main.c

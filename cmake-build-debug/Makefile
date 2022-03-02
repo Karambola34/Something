@@ -320,6 +320,30 @@ libs/strings/tasks/removeNonLetters.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.s
 .PHONY : libs/strings/tasks/removeNonLetters.c.s
 
+libs/strings/tasks/replaceDigitsBySpaces.obj: libs/strings/tasks/replaceDigitsBySpaces.c.obj
+.PHONY : libs/strings/tasks/replaceDigitsBySpaces.obj
+
+# target to build an object file
+libs/strings/tasks/replaceDigitsBySpaces.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.obj
+.PHONY : libs/strings/tasks/replaceDigitsBySpaces.c.obj
+
+libs/strings/tasks/replaceDigitsBySpaces.i: libs/strings/tasks/replaceDigitsBySpaces.c.i
+.PHONY : libs/strings/tasks/replaceDigitsBySpaces.i
+
+# target to preprocess a source file
+libs/strings/tasks/replaceDigitsBySpaces.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.i
+.PHONY : libs/strings/tasks/replaceDigitsBySpaces.c.i
+
+libs/strings/tasks/replaceDigitsBySpaces.s: libs/strings/tasks/replaceDigitsBySpaces.c.s
+.PHONY : libs/strings/tasks/replaceDigitsBySpaces.s
+
+# target to generate assembly for a file
+libs/strings/tasks/replaceDigitsBySpaces.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.s
+.PHONY : libs/strings/tasks/replaceDigitsBySpaces.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -377,6 +401,9 @@ help:
 	@echo ... libs/strings/tasks/removeNonLetters.obj
 	@echo ... libs/strings/tasks/removeNonLetters.i
 	@echo ... libs/strings/tasks/removeNonLetters.s
+	@echo ... libs/strings/tasks/replaceDigitsBySpaces.obj
+	@echo ... libs/strings/tasks/replaceDigitsBySpaces.i
+	@echo ... libs/strings/tasks/replaceDigitsBySpaces.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

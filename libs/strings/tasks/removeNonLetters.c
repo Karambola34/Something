@@ -10,8 +10,19 @@ void removeNonLetters(char *s) {
     *destination = '\0';
 }
 
-void test_removeNonLetters () {
+void test_removeNonLettersNotEmpty () {
     char s [] = " Hi123 \n\t\t273#$^&";
     removeNonLetters(s) ;
     ASSERT_STRING("Hi123273#$^&",s);
+}
+
+void test_removeNonLettersEmpty () {
+    char s [] = "";
+    removeNonLetters(s) ;
+    ASSERT_STRING("",s);
+}
+
+void test_removeNonLetters(){
+    test_removeNonLettersEmpty();
+    test_removeNonLettersNotEmpty();
 }

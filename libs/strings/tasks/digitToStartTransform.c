@@ -21,9 +21,21 @@ void digitToStartForAllWords(char *s) {
     }
 }
 
-void test_digitToStartLettersFirstDigitsSecond() {
+void test_digitToStartNotEmpty() {
     char s[] = "A32BC1 W09MWOO7";
     digitToStartForAllWords(s);
 
     ASSERT_STRING("ABC321 WMWOO097", s);
+}
+
+void test_digitToStartEmpty() {
+    char s[] = "";
+    digitToStartForAllWords(s);
+
+    ASSERT_STRING("", s);
+}
+
+void test_digitToStartLettersFirstDigitsSecond(){
+    test_digitToStartEmpty();
+    test_digitToStartNotEmpty();
 }

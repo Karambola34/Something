@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/removeExtraSpaces.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj"
+  "CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.obj"
   "CMakeFiles/untitled8.dir/main.c.obj"
   "libuntitled8.dll.a"
   "untitled8.exe"
