@@ -42,7 +42,7 @@ void test_removeEmpty() {
     ASSERT_STRING("", s);
 }
 
-void test_removeExtraSpaces(){
+void test_removeExtraSpaces() {
     test_removeAreSpaces();
     test_removeNoSpaces();
     test_removeEmpty();

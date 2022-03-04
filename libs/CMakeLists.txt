@@ -15,6 +15,7 @@ add_library (str string/string_.h string/string_.c
         string/tasks/reverseWords.h
         string/tasks/replaceDigitsBySpaces.h
         string/tasks/removeNonLetters.h
+        string/tasks/areWordsOrdered.h
         #...
         #< файл с решением задачи >
         #...

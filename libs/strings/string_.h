@@ -79,8 +79,12 @@ void assertString(const char *expected, char *got,
 // иначе возвращает 0
 int getWord(char *beginSearch, WordDescriptor *word);
 
-//возвращает значение 'истина', если было найдено слово word, начиная с rbegin и заканчивая rend
+// возвращает значение 'истина', если было найдено слово word, начиная с rbegin и заканчивая rend
 // иначе возвращает 0
 bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word);
+
+// возвращает отрицательное значение, если w1 располагается до w2 в лексикографическом порядке,
+// значение 0, если w1 и w2 равны, иначе – положительное значение
+int areWordsEqual(WordDescriptor w1,WordDescriptor w2);
 
 #endif //UNTITLED8_STRING__H

@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/averk/CLionProjects/untitled8/libs/data_structures/matrix/matrix.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/libs/data_structures/vector/vector.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/string_.c.obj"
+  "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/areWordsOrdered.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/removeExtraSpaces.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj"

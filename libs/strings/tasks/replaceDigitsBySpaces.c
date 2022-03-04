@@ -8,20 +8,20 @@
 
 void replaceDigitsBySpaces(char *s) {
     char *recPtr = s;
-    char *stringBuffer = copy(s, getEndOfString(s), _stringBuffer);
-    *stringBuffer = '\0';
-    char *readPtr = stringBuffer;
+    copy(s, getEndOfString(s) + 1, _stringBuffer);
+    char *readPtr = _stringBuffer;
     while (*readPtr != '\0') {
-        if (isalpha(*readPtr)) {
-            *recPtr = *readPtr;
-            recPtr++;
-        } else if (isdigit(*readPtr)) {
+        if (isdigit(*readPtr)) {
             int amountOfSpaces = *readPtr - ZERO_IN_CHAR;
             for (int i = 0; i < amountOfSpaces; i++) {
                 *recPtr = ' ';
                 recPtr++;
             }
+        } else {
+            *recPtr = *readPtr;
+            recPtr++;
         }
+
         readPtr++;
     }
     *recPtr = '\0';

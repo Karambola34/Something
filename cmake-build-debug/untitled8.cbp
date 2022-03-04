@@ -104,6 +104,12 @@
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h">
 			<Option target="untitled8"/>
 		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.c">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.h">
+			<Option target="untitled8"/>
+		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.c">
 			<Option target="untitled8"/>
 		</Unit>

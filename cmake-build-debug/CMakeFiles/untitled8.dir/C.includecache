@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.c
+string_.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+
 C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
 stdio.h
 -
@@ -18,6 +22,32 @@ limits.h
 stdbool.h
 -
 
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.c
+areWordsOrdered.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.h
+
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.h
+../string_.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+assert.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/assert.h
+
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.c
+digitToStartTransform.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h
+
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h
+../string_.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.c
+removeExtraSpaces.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.h
+
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.h
+../string_.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.c
 removeNonLetters.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
@@ -25,4 +55,24 @@ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
 ../string_.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replaceDigitsBySpaces.c
+replaceDigitsBySpaces.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replaceDigitsBySpaces.h
+
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replaceDigitsBySpaces.h
+../string_.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+
+C:/Users/averk/CLionProjects/untitled8/main.c
+libs/strings/tasks/removeNonLetters.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
+libs/strings/tasks/removeExtraSpaces.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.h
+libs/strings/tasks/digitToStartTransform.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h
+libs/strings/tasks/replaceDigitsBySpaces.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replaceDigitsBySpaces.h
+libs/strings/tasks/areWordsOrdered.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.h
 

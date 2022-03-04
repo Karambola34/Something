@@ -13,5 +13,4 @@ void replaceDigitsBySpaces(char *s);
 void test_replaceDigitsBySpaces();
 
 
-
 #endif //UNTITLED8_REPLACEDIGITSBYSPACES_H

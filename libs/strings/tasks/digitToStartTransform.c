@@ -35,7 +35,7 @@ void test_digitToStartEmpty() {
     ASSERT_STRING("", s);
 }
 
-void test_digitToStartLettersFirstDigitsSecond(){
+void test_digitToStartLettersFirstDigitsSecond() {
     test_digitToStartEmpty();
     test_digitToStartNotEmpty();
 }

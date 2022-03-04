@@ -16,6 +16,10 @@ CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj: \
 CMakeFiles/untitled8.dir/libs/strings/string_.c.obj: \
  ../libs/strings/string_.c \
  ../libs/strings/string_.h
+CMakeFiles/untitled8.dir/libs/strings/tasks/areWordsOrdered.c.obj: \
+ ../libs/strings/string_.h \
+ ../libs/strings/tasks/areWordsOrdered.c \
+ ../libs/strings/tasks/areWordsOrdered.h
 CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.obj: \
  ../libs/strings/string_.h \
  ../libs/strings/tasks/digitToStartTransform.c \
@@ -34,6 +38,7 @@ CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.obj: \
  ../libs/strings/tasks/replaceDigitsBySpaces.h
 CMakeFiles/untitled8.dir/main.c.obj: \
  ../libs/strings/string_.h \
+ ../libs/strings/tasks/areWordsOrdered.h \
  ../libs/strings/tasks/digitToStartTransform.h \
  ../libs/strings/tasks/removeExtraSpaces.h \
  ../libs/strings/tasks/removeNonLetters.h \

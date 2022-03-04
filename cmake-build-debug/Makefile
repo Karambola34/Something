@@ -248,6 +248,30 @@ libs/strings/string_.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/string_.c.s
 .PHONY : libs/strings/string_.c.s
 
+libs/strings/tasks/areWordsOrdered.obj: libs/strings/tasks/areWordsOrdered.c.obj
+.PHONY : libs/strings/tasks/areWordsOrdered.obj
+
+# target to build an object file
+libs/strings/tasks/areWordsOrdered.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/areWordsOrdered.c.obj
+.PHONY : libs/strings/tasks/areWordsOrdered.c.obj
+
+libs/strings/tasks/areWordsOrdered.i: libs/strings/tasks/areWordsOrdered.c.i
+.PHONY : libs/strings/tasks/areWordsOrdered.i
+
+# target to preprocess a source file
+libs/strings/tasks/areWordsOrdered.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/areWordsOrdered.c.i
+.PHONY : libs/strings/tasks/areWordsOrdered.c.i
+
+libs/strings/tasks/areWordsOrdered.s: libs/strings/tasks/areWordsOrdered.c.s
+.PHONY : libs/strings/tasks/areWordsOrdered.s
+
+# target to generate assembly for a file
+libs/strings/tasks/areWordsOrdered.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/areWordsOrdered.c.s
+.PHONY : libs/strings/tasks/areWordsOrdered.c.s
+
 libs/strings/tasks/digitToStartTransform.obj: libs/strings/tasks/digitToStartTransform.c.obj
 .PHONY : libs/strings/tasks/digitToStartTransform.obj
 
@@ -392,6 +416,9 @@ help:
 	@echo ... libs/strings/string_.obj
 	@echo ... libs/strings/string_.i
 	@echo ... libs/strings/string_.s
+	@echo ... libs/strings/tasks/areWordsOrdered.obj
+	@echo ... libs/strings/tasks/areWordsOrdered.i
+	@echo ... libs/strings/tasks/areWordsOrdered.s
 	@echo ... libs/strings/tasks/digitToStartTransform.obj
 	@echo ... libs/strings/tasks/digitToStartTransform.i
 	@echo ... libs/strings/tasks/digitToStartTransform.s

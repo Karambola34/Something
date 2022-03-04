@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.obj"
   "CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/string_.c.obj"
+  "CMakeFiles/untitled8.dir/libs/strings/tasks/areWordsOrdered.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/removeExtraSpaces.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj"
