@@ -248,6 +248,30 @@ libs/strings/string_.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/string_.c.s
 .PHONY : libs/strings/string_.c.s
 
+libs/strings/tasks/amountOfPalindromes.obj: libs/strings/tasks/amountOfPalindromes.c.obj
+.PHONY : libs/strings/tasks/amountOfPalindromes.obj
+
+# target to build an object file
+libs/strings/tasks/amountOfPalindromes.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/amountOfPalindromes.c.obj
+.PHONY : libs/strings/tasks/amountOfPalindromes.c.obj
+
+libs/strings/tasks/amountOfPalindromes.i: libs/strings/tasks/amountOfPalindromes.c.i
+.PHONY : libs/strings/tasks/amountOfPalindromes.i
+
+# target to preprocess a source file
+libs/strings/tasks/amountOfPalindromes.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/amountOfPalindromes.c.i
+.PHONY : libs/strings/tasks/amountOfPalindromes.c.i
+
+libs/strings/tasks/amountOfPalindromes.s: libs/strings/tasks/amountOfPalindromes.c.s
+.PHONY : libs/strings/tasks/amountOfPalindromes.s
+
+# target to generate assembly for a file
+libs/strings/tasks/amountOfPalindromes.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/amountOfPalindromes.c.s
+.PHONY : libs/strings/tasks/amountOfPalindromes.c.s
+
 libs/strings/tasks/areWordsOrdered.obj: libs/strings/tasks/areWordsOrdered.c.obj
 .PHONY : libs/strings/tasks/areWordsOrdered.obj
 
@@ -440,6 +464,9 @@ help:
 	@echo ... libs/strings/string_.obj
 	@echo ... libs/strings/string_.i
 	@echo ... libs/strings/string_.s
+	@echo ... libs/strings/tasks/amountOfPalindromes.obj
+	@echo ... libs/strings/tasks/amountOfPalindromes.i
+	@echo ... libs/strings/tasks/amountOfPalindromes.s
 	@echo ... libs/strings/tasks/areWordsOrdered.obj
 	@echo ... libs/strings/tasks/areWordsOrdered.i
 	@echo ... libs/strings/tasks/areWordsOrdered.s

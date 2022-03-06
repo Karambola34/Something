@@ -16,6 +16,10 @@ CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj
 CMakeFiles/untitled8.dir/libs/strings/string_.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.c
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+CMakeFiles/untitled8.dir/libs/strings/tasks/amountOfPalindromes.c.obj
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/amountOfPalindromes.c
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/amountOfPalindromes.h
 CMakeFiles/untitled8.dir/libs/strings/tasks/areWordsOrdered.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.c
@@ -42,6 +46,7 @@ CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replaceDigitsBySpaces.h
 CMakeFiles/untitled8.dir/main.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/amountOfPalindromes.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.h

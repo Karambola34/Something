@@ -18,6 +18,16 @@ limits.h
 stdbool.h
 -
 
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/amountOfPalindromes.c
+amountOfPalindromes.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/amountOfPalindromes.h
+
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/amountOfPalindromes.h
+../string_.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+assert.h
+-
+
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.h
 ../string_.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
@@ -27,10 +37,6 @@ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/assert.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h
 ../string_.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
-
-C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.c
-outputReversedString.h
-C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.h
 
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.h
 ../string_.h
@@ -61,4 +67,6 @@ libs/strings/tasks/areWordsOrdered.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.h
 libs/strings/tasks/outputReversedString.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.h
+libs/strings/tasks/amountOfPalindromes.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/amountOfPalindromes.h
 

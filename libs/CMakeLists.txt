@@ -16,6 +16,7 @@ add_library (str string/string_.h string/string_.c
         string/tasks/replaceDigitsBySpaces.h
         string/tasks/removeNonLetters.h
         string/tasks/areWordsOrdered.h
+        string/tasks/amountOfPalindromes.h
         #...
         #< файл с решением задачи >
         #...
