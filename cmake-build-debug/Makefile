@@ -296,6 +296,30 @@ libs/strings/tasks/digitToStartTransform.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.s
 .PHONY : libs/strings/tasks/digitToStartTransform.c.s
 
+libs/strings/tasks/outputReversedString.obj: libs/strings/tasks/outputReversedString.c.obj
+.PHONY : libs/strings/tasks/outputReversedString.obj
+
+# target to build an object file
+libs/strings/tasks/outputReversedString.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/outputReversedString.c.obj
+.PHONY : libs/strings/tasks/outputReversedString.c.obj
+
+libs/strings/tasks/outputReversedString.i: libs/strings/tasks/outputReversedString.c.i
+.PHONY : libs/strings/tasks/outputReversedString.i
+
+# target to preprocess a source file
+libs/strings/tasks/outputReversedString.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/outputReversedString.c.i
+.PHONY : libs/strings/tasks/outputReversedString.c.i
+
+libs/strings/tasks/outputReversedString.s: libs/strings/tasks/outputReversedString.c.s
+.PHONY : libs/strings/tasks/outputReversedString.s
+
+# target to generate assembly for a file
+libs/strings/tasks/outputReversedString.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/outputReversedString.c.s
+.PHONY : libs/strings/tasks/outputReversedString.c.s
+
 libs/strings/tasks/removeExtraSpaces.obj: libs/strings/tasks/removeExtraSpaces.c.obj
 .PHONY : libs/strings/tasks/removeExtraSpaces.obj
 
@@ -422,6 +446,9 @@ help:
 	@echo ... libs/strings/tasks/digitToStartTransform.obj
 	@echo ... libs/strings/tasks/digitToStartTransform.i
 	@echo ... libs/strings/tasks/digitToStartTransform.s
+	@echo ... libs/strings/tasks/outputReversedString.obj
+	@echo ... libs/strings/tasks/outputReversedString.i
+	@echo ... libs/strings/tasks/outputReversedString.s
 	@echo ... libs/strings/tasks/removeExtraSpaces.obj
 	@echo ... libs/strings/tasks/removeExtraSpaces.i
 	@echo ... libs/strings/tasks/removeExtraSpaces.s

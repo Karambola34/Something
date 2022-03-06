@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled8.dir/libs/strings/string_.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/areWordsOrdered.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.obj"
+  "CMakeFiles/untitled8.dir/libs/strings/tasks/outputReversedString.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/removeExtraSpaces.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.obj"

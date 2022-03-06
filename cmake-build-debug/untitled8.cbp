@@ -116,6 +116,12 @@
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h">
 			<Option target="untitled8"/>
 		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.c">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.h">
+			<Option target="untitled8"/>
+		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.c">
 			<Option target="untitled8"/>
 		</Unit>

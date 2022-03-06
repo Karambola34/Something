@@ -46,7 +46,8 @@ char *findSpaceReverse(char *rbegin, const char *rend) {
 
 int strcmp_(const char *lhs, const char *rhs) {
     while (*lhs != '\0' && *lhs == *rhs) {
-        lhs++; rhs++;
+        lhs++;
+        rhs++;
 
     }
     return *lhs - *rhs;
@@ -120,9 +121,28 @@ bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
 int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
     char *beginWord1 = w1.begin;
     char *beginWord2 = w2.begin;
-    while (*beginWord1 == *beginWord2 && beginWord1 != w1.end){
+    while (*beginWord1 == *beginWord2 && beginWord1 != w1.end) {
         beginWord1++;
         beginWord2++;
     }
     return *beginWord1 - *beginWord2;
 }
+
+void getBagOfWords(BagOfWords *bag, char *s) {
+    char *begin = s;
+    size_t size = 0;
+    WordDescriptor word;
+    while (getWord(begin, &word)) {
+        bag->words[size] = word;
+
+        size++;
+        begin = word.end;
+    }
+    bag->size = size;
+}
+
+
+
+
+
+

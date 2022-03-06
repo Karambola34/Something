@@ -24,6 +24,10 @@ CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.c
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h
+CMakeFiles/untitled8.dir/libs/strings/tasks/outputReversedString.c.obj
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.c
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.h
 CMakeFiles/untitled8.dir/libs/strings/tasks/removeExtraSpaces.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.c
@@ -40,6 +44,7 @@ CMakeFiles/untitled8.dir/main.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replaceDigitsBySpaces.h
