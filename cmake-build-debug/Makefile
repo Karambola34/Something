@@ -344,6 +344,30 @@ libs/strings/tasks/getMixedString.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/getMixedString.c.s
 .PHONY : libs/strings/tasks/getMixedString.c.s
 
+libs/strings/tasks/getStringWithReversedWords.obj: libs/strings/tasks/getStringWithReversedWords.c.obj
+.PHONY : libs/strings/tasks/getStringWithReversedWords.obj
+
+# target to build an object file
+libs/strings/tasks/getStringWithReversedWords.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/getStringWithReversedWords.c.obj
+.PHONY : libs/strings/tasks/getStringWithReversedWords.c.obj
+
+libs/strings/tasks/getStringWithReversedWords.i: libs/strings/tasks/getStringWithReversedWords.c.i
+.PHONY : libs/strings/tasks/getStringWithReversedWords.i
+
+# target to preprocess a source file
+libs/strings/tasks/getStringWithReversedWords.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/getStringWithReversedWords.c.i
+.PHONY : libs/strings/tasks/getStringWithReversedWords.c.i
+
+libs/strings/tasks/getStringWithReversedWords.s: libs/strings/tasks/getStringWithReversedWords.c.s
+.PHONY : libs/strings/tasks/getStringWithReversedWords.s
+
+# target to generate assembly for a file
+libs/strings/tasks/getStringWithReversedWords.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/getStringWithReversedWords.c.s
+.PHONY : libs/strings/tasks/getStringWithReversedWords.c.s
+
 libs/strings/tasks/outputReversedString.obj: libs/strings/tasks/outputReversedString.c.obj
 .PHONY : libs/strings/tasks/outputReversedString.obj
 
@@ -500,6 +524,9 @@ help:
 	@echo ... libs/strings/tasks/getMixedString.obj
 	@echo ... libs/strings/tasks/getMixedString.i
 	@echo ... libs/strings/tasks/getMixedString.s
+	@echo ... libs/strings/tasks/getStringWithReversedWords.obj
+	@echo ... libs/strings/tasks/getStringWithReversedWords.i
+	@echo ... libs/strings/tasks/getStringWithReversedWords.s
 	@echo ... libs/strings/tasks/outputReversedString.obj
 	@echo ... libs/strings/tasks/outputReversedString.i
 	@echo ... libs/strings/tasks/outputReversedString.s

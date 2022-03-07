@@ -6,10 +6,13 @@
 
 void outputReversedString(char *s) {
     copy(s, getEndOfString(s),_stringBuffer);
+    char *begin = _stringBuffer;
+    char *end = begin + strlen_(s);
+    *end = '\0';
     getBagOfWords(&_bag, _stringBuffer);
     for (int i = _bag.size - 1; i >= 0; i--) {
         *_bag.words[i].end='\0';
-        printf("%s ",_bag.words[i].begin);
+        printf("%s \n",_bag.words[i].begin);
     }
 }
 
@@ -21,7 +24,7 @@ void pseudoTestOutputReversedString1(){
 }
 
 void pseudoTestOutputReversedString2(){
-    char s[]="zero one tulip\t candycorne";
+    char s[]="zero\n one\n tulip\t\n candycorne";
     printf("source string: \n%s\noutput string:\n",s);
     outputReversedString(s);
     printf("\n");
@@ -30,6 +33,6 @@ void pseudoTestOutputReversedString2(){
 
 
 void pseudoTestOutputReversedString(){
-    pseudoTestOutputReversedString1();
     pseudoTestOutputReversedString2();
+    pseudoTestOutputReversedString1();
 }

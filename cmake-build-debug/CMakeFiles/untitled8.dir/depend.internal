@@ -32,6 +32,10 @@ CMakeFiles/untitled8.dir/libs/strings/tasks/getMixedString.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getMixedString.c
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getMixedString.h
+CMakeFiles/untitled8.dir/libs/strings/tasks/getStringWithReversedWords.c.obj
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getStringWithReversedWords.c
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getStringWithReversedWords.h
 CMakeFiles/untitled8.dir/libs/strings/tasks/outputReversedString.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.c
@@ -54,6 +58,7 @@ CMakeFiles/untitled8.dir/main.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getMixedString.h
+ C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getStringWithReversedWords.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.h
  C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h

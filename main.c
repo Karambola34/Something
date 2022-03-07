@@ -7,6 +7,8 @@
 #include "libs/strings/tasks/outputReversedString.h"
 #include "libs/strings/tasks/amountOfPalindromes.h"
 #include "libs/strings/tasks/getMixedString.h"
+#include "libs/strings/tasks/getStringWithReversedWords.h"
+
 
 
 
@@ -19,5 +21,6 @@ int main() {
     pseudoTestOutputReversedString();
     test_amountOfPalindromes();
     test_getMixedString();
+    test_getStringWithReversedWords();
     return 0;
 }
