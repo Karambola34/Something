@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled8.dir/libs/strings/tasks/amountOfPalindromes.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/areWordsOrdered.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.obj"
+  "CMakeFiles/untitled8.dir/libs/strings/tasks/getMixedString.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/outputReversedString.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/removeExtraSpaces.c.obj"
   "CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj"

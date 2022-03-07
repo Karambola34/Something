@@ -6,6 +6,7 @@
 #include "libs/strings/tasks/areWordsOrdered.h"
 #include "libs/strings/tasks/outputReversedString.h"
 #include "libs/strings/tasks/amountOfPalindromes.h"
+#include "libs/strings/tasks/getMixedString.h"
 
 
 
@@ -17,5 +18,6 @@ int main() {
     test_areWordsOrdered();
     pseudoTestOutputReversedString();
     test_amountOfPalindromes();
+    test_getMixedString();
     return 0;
 }

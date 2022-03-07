@@ -17,6 +17,8 @@ add_library (str string/string_.h string/string_.c
         string/tasks/removeNonLetters.h
         string/tasks/areWordsOrdered.h
         string/tasks/amountOfPalindromes.h
+        string/tasks/getMixedString.h
+
         #...
         #< файл с решением задачи >
         #...

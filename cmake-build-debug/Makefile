@@ -320,6 +320,30 @@ libs/strings/tasks/digitToStartTransform.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.s
 .PHONY : libs/strings/tasks/digitToStartTransform.c.s
 
+libs/strings/tasks/getMixedString.obj: libs/strings/tasks/getMixedString.c.obj
+.PHONY : libs/strings/tasks/getMixedString.obj
+
+# target to build an object file
+libs/strings/tasks/getMixedString.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/getMixedString.c.obj
+.PHONY : libs/strings/tasks/getMixedString.c.obj
+
+libs/strings/tasks/getMixedString.i: libs/strings/tasks/getMixedString.c.i
+.PHONY : libs/strings/tasks/getMixedString.i
+
+# target to preprocess a source file
+libs/strings/tasks/getMixedString.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/getMixedString.c.i
+.PHONY : libs/strings/tasks/getMixedString.c.i
+
+libs/strings/tasks/getMixedString.s: libs/strings/tasks/getMixedString.c.s
+.PHONY : libs/strings/tasks/getMixedString.s
+
+# target to generate assembly for a file
+libs/strings/tasks/getMixedString.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/getMixedString.c.s
+.PHONY : libs/strings/tasks/getMixedString.c.s
+
 libs/strings/tasks/outputReversedString.obj: libs/strings/tasks/outputReversedString.c.obj
 .PHONY : libs/strings/tasks/outputReversedString.obj
 
@@ -473,6 +497,9 @@ help:
 	@echo ... libs/strings/tasks/digitToStartTransform.obj
 	@echo ... libs/strings/tasks/digitToStartTransform.i
 	@echo ... libs/strings/tasks/digitToStartTransform.s
+	@echo ... libs/strings/tasks/getMixedString.obj
+	@echo ... libs/strings/tasks/getMixedString.i
+	@echo ... libs/strings/tasks/getMixedString.s
 	@echo ... libs/strings/tasks/outputReversedString.obj
 	@echo ... libs/strings/tasks/outputReversedString.i
 	@echo ... libs/strings/tasks/outputReversedString.s

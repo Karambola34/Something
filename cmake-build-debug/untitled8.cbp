@@ -122,6 +122,12 @@
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h">
 			<Option target="untitled8"/>
 		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getMixedString.c">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getMixedString.h">
+			<Option target="untitled8"/>
+		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.c">
 			<Option target="untitled8"/>
 		</Unit>

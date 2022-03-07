@@ -28,6 +28,10 @@ CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.obj: \
  ../libs/strings/string_.h \
  ../libs/strings/tasks/digitToStartTransform.c \
  ../libs/strings/tasks/digitToStartTransform.h
+CMakeFiles/untitled8.dir/libs/strings/tasks/getMixedString.c.obj: \
+ ../libs/strings/string_.h \
+ ../libs/strings/tasks/getMixedString.c \
+ ../libs/strings/tasks/getMixedString.h
 CMakeFiles/untitled8.dir/libs/strings/tasks/outputReversedString.c.obj: \
  ../libs/strings/string_.h \
  ../libs/strings/tasks/outputReversedString.c \
@@ -49,6 +53,7 @@ CMakeFiles/untitled8.dir/main.c.obj: \
  ../libs/strings/tasks/amountOfPalindromes.h \
  ../libs/strings/tasks/areWordsOrdered.h \
  ../libs/strings/tasks/digitToStartTransform.h \
+ ../libs/strings/tasks/getMixedString.h \
  ../libs/strings/tasks/outputReversedString.h \
  ../libs/strings/tasks/removeExtraSpaces.h \
  ../libs/strings/tasks/removeNonLetters.h \
