@@ -19,6 +19,7 @@ add_library (str string/string_.h string/string_.c
         string/tasks/amountOfPalindromes.h
         string/tasks/getMixedString.h
         string/tasks/getStringWithReversedWords.h
+        string/tasks/printWordBeforeFirstWordWithA.h
 
         #...
         #< файл с решением задачи >

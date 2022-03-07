@@ -52,6 +52,10 @@ CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.obj: \
  ../libs/strings/string_.h \
  ../libs/strings/tasks/replaceDigitsBySpaces.c \
  ../libs/strings/tasks/replaceDigitsBySpaces.h
+CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj: \
+ ../libs/strings/string_.h \
+ ../libs/strings/tasks/void\ printWordBeforeFirstWordWithA.c \
+ ../libs/strings/tasks/void\ printWordBeforeFirstWordWithA.h
 CMakeFiles/untitled8.dir/main.c.obj: \
  ../libs/strings/string_.h \
  ../libs/strings/tasks/amountOfPalindromes.h \
@@ -63,4 +67,5 @@ CMakeFiles/untitled8.dir/main.c.obj: \
  ../libs/strings/tasks/removeExtraSpaces.h \
  ../libs/strings/tasks/removeNonLetters.h \
  ../libs/strings/tasks/replaceDigitsBySpaces.h \
+ ../libs/strings/tasks/void\ printWordBeforeFirstWordWithA.h \
  ../main.c

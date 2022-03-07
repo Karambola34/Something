@@ -158,6 +158,12 @@
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replaceDigitsBySpaces.h">
 			<Option target="untitled8"/>
 		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/void printWordBeforeFirstWordWithA.c">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/void printWordBeforeFirstWordWithA.h">
+			<Option target="untitled8"/>
+		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/main.c">
 			<Option target="untitled8"/>
 		</Unit>

@@ -464,6 +464,30 @@ libs/strings/tasks/replaceDigitsBySpaces.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.s
 .PHONY : libs/strings/tasks/replaceDigitsBySpaces.c.s
 
+libs/strings/tasks/void_printWordBeforeFirstWordWithA.obj: libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj
+.PHONY : libs/strings/tasks/void_printWordBeforeFirstWordWithA.obj
+
+# target to build an object file
+libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj
+.PHONY : libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj
+
+libs/strings/tasks/void_printWordBeforeFirstWordWithA.i: libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.i
+.PHONY : libs/strings/tasks/void_printWordBeforeFirstWordWithA.i
+
+# target to preprocess a source file
+libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.i
+.PHONY : libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.i
+
+libs/strings/tasks/void_printWordBeforeFirstWordWithA.s: libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.s
+.PHONY : libs/strings/tasks/void_printWordBeforeFirstWordWithA.s
+
+# target to generate assembly for a file
+libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.s
+.PHONY : libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -539,6 +563,9 @@ help:
 	@echo ... libs/strings/tasks/replaceDigitsBySpaces.obj
 	@echo ... libs/strings/tasks/replaceDigitsBySpaces.i
 	@echo ... libs/strings/tasks/replaceDigitsBySpaces.s
+	@echo ... libs/strings/tasks/void_printWordBeforeFirstWordWithA.obj
+	@echo ... libs/strings/tasks/void_printWordBeforeFirstWordWithA.i
+	@echo ... libs/strings/tasks/void_printWordBeforeFirstWordWithA.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

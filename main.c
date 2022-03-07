@@ -8,6 +8,7 @@
 #include "libs/strings/tasks/amountOfPalindromes.h"
 #include "libs/strings/tasks/getMixedString.h"
 #include "libs/strings/tasks/getStringWithReversedWords.h"
+#include "libs/strings/tasks/void printWordBeforeFirstWordWithA.h"
 
 
 
@@ -22,5 +23,6 @@ int main() {
     test_amountOfPalindromes();
     test_getMixedString();
     test_getStringWithReversedWords();
+    testAll_getWordBeforeFirstWordWithA();
     return 0;
 }
