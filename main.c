@@ -10,7 +10,7 @@
 #include "libs/strings/tasks/getStringWithReversedWords.h"
 #include "libs/strings/tasks/printWordBeforeFirstWordWithA.h"
 #include "libs/strings/tasks/lastWordInFirstStringInSecondString.h"
-
+#include  "libs/strings/tasks/hasEqualWords.h"
 
 
 
@@ -27,5 +27,6 @@ int main() {
     test_getStringWithReversedWords();
     testAll_getWordBeforeFirstWordWithA();
     test_lastWordInFirstStringInSecondString();
+    test_hasEqualWords();
     return 0;
 }

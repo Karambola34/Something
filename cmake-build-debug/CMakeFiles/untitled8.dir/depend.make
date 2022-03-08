@@ -67,6 +67,7 @@ CMakeFiles/untitled8.dir/main.c.obj: \
  ../libs/strings/tasks/digitToStartTransform.h \
  ../libs/strings/tasks/getMixedString.h \
  ../libs/strings/tasks/getStringWithReversedWords.h \
+ ../libs/strings/tasks/hasEqualWords.h \
  ../libs/strings/tasks/lastWordInFirstStringInSecondString.h \
  ../libs/strings/tasks/outputReversedString.h \
  ../libs/strings/tasks/printWordBeforeFirstWordWithA.h \

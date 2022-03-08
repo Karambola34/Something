@@ -9,6 +9,7 @@
 #include <ctype.h>
 #include <limits.h>
 #include <stdbool.h>
+#include <assert.h>
 
 #define ASSERT_STRING(expected, got) assertString ( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )

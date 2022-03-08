@@ -134,6 +134,9 @@
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getStringWithReversedWords.h">
 			<Option target="untitled8"/>
 		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/hasEqualWords.h">
+			<Option target="untitled8"/>
+		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/lastWordInFirstStringInSecondString.c">
 			<Option target="untitled8"/>
 		</Unit>
