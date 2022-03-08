@@ -2,8 +2,8 @@
 // Created by averk on 08.03.2022.
 //
 
-#ifndef UNTITLED8_VOID_PRINTWORDBEFOREFIRSTWORDWITHA_H
-#define UNTITLED8_VOID_PRINTWORDBEFOREFIRSTWORDWITHA_H
+#ifndef UNTITLED8_PRINTWORDBEFOREFIRSTWORDWITHA_H
+#define UNTITLED8_PRINTWORDBEFOREFIRSTWORDWITHA_H
 
 #include  "../string_.h"
 #include <assert.h>
@@ -27,4 +27,4 @@ WordBeforeFirstWordWithAReturnCode getWordBeforeFirstWordWithA(char *s, char **b
 
 void testAll_getWordBeforeFirstWordWithA();
 
-#endif //UNTITLED8_VOID_PRINTWORDBEFOREFIRSTWORDWITHA_H
+#endif //UNTITLED8_PRINTWORDBEFOREFIRSTWORDWITHA_H

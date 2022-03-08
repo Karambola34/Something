@@ -368,6 +368,30 @@ libs/strings/tasks/getStringWithReversedWords.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/getStringWithReversedWords.c.s
 .PHONY : libs/strings/tasks/getStringWithReversedWords.c.s
 
+libs/strings/tasks/lastWordInFirstStringInSecondString.obj: libs/strings/tasks/lastWordInFirstStringInSecondString.c.obj
+.PHONY : libs/strings/tasks/lastWordInFirstStringInSecondString.obj
+
+# target to build an object file
+libs/strings/tasks/lastWordInFirstStringInSecondString.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.obj
+.PHONY : libs/strings/tasks/lastWordInFirstStringInSecondString.c.obj
+
+libs/strings/tasks/lastWordInFirstStringInSecondString.i: libs/strings/tasks/lastWordInFirstStringInSecondString.c.i
+.PHONY : libs/strings/tasks/lastWordInFirstStringInSecondString.i
+
+# target to preprocess a source file
+libs/strings/tasks/lastWordInFirstStringInSecondString.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.i
+.PHONY : libs/strings/tasks/lastWordInFirstStringInSecondString.c.i
+
+libs/strings/tasks/lastWordInFirstStringInSecondString.s: libs/strings/tasks/lastWordInFirstStringInSecondString.c.s
+.PHONY : libs/strings/tasks/lastWordInFirstStringInSecondString.s
+
+# target to generate assembly for a file
+libs/strings/tasks/lastWordInFirstStringInSecondString.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.s
+.PHONY : libs/strings/tasks/lastWordInFirstStringInSecondString.c.s
+
 libs/strings/tasks/outputReversedString.obj: libs/strings/tasks/outputReversedString.c.obj
 .PHONY : libs/strings/tasks/outputReversedString.obj
 
@@ -391,6 +415,30 @@ libs/strings/tasks/outputReversedString.s: libs/strings/tasks/outputReversedStri
 libs/strings/tasks/outputReversedString.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/outputReversedString.c.s
 .PHONY : libs/strings/tasks/outputReversedString.c.s
+
+libs/strings/tasks/printWordBeforeFirstWordWithA.obj: libs/strings/tasks/printWordBeforeFirstWordWithA.c.obj
+.PHONY : libs/strings/tasks/printWordBeforeFirstWordWithA.obj
+
+# target to build an object file
+libs/strings/tasks/printWordBeforeFirstWordWithA.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.obj
+.PHONY : libs/strings/tasks/printWordBeforeFirstWordWithA.c.obj
+
+libs/strings/tasks/printWordBeforeFirstWordWithA.i: libs/strings/tasks/printWordBeforeFirstWordWithA.c.i
+.PHONY : libs/strings/tasks/printWordBeforeFirstWordWithA.i
+
+# target to preprocess a source file
+libs/strings/tasks/printWordBeforeFirstWordWithA.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.i
+.PHONY : libs/strings/tasks/printWordBeforeFirstWordWithA.c.i
+
+libs/strings/tasks/printWordBeforeFirstWordWithA.s: libs/strings/tasks/printWordBeforeFirstWordWithA.c.s
+.PHONY : libs/strings/tasks/printWordBeforeFirstWordWithA.s
+
+# target to generate assembly for a file
+libs/strings/tasks/printWordBeforeFirstWordWithA.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.s
+.PHONY : libs/strings/tasks/printWordBeforeFirstWordWithA.c.s
 
 libs/strings/tasks/removeExtraSpaces.obj: libs/strings/tasks/removeExtraSpaces.c.obj
 .PHONY : libs/strings/tasks/removeExtraSpaces.obj
@@ -464,30 +512,6 @@ libs/strings/tasks/replaceDigitsBySpaces.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.s
 .PHONY : libs/strings/tasks/replaceDigitsBySpaces.c.s
 
-libs/strings/tasks/void_printWordBeforeFirstWordWithA.obj: libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj
-.PHONY : libs/strings/tasks/void_printWordBeforeFirstWordWithA.obj
-
-# target to build an object file
-libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj
-.PHONY : libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj
-
-libs/strings/tasks/void_printWordBeforeFirstWordWithA.i: libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.i
-.PHONY : libs/strings/tasks/void_printWordBeforeFirstWordWithA.i
-
-# target to preprocess a source file
-libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.i
-.PHONY : libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.i
-
-libs/strings/tasks/void_printWordBeforeFirstWordWithA.s: libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.s
-.PHONY : libs/strings/tasks/void_printWordBeforeFirstWordWithA.s
-
-# target to generate assembly for a file
-libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.s
-.PHONY : libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.s
-
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -551,9 +575,15 @@ help:
 	@echo ... libs/strings/tasks/getStringWithReversedWords.obj
 	@echo ... libs/strings/tasks/getStringWithReversedWords.i
 	@echo ... libs/strings/tasks/getStringWithReversedWords.s
+	@echo ... libs/strings/tasks/lastWordInFirstStringInSecondString.obj
+	@echo ... libs/strings/tasks/lastWordInFirstStringInSecondString.i
+	@echo ... libs/strings/tasks/lastWordInFirstStringInSecondString.s
 	@echo ... libs/strings/tasks/outputReversedString.obj
 	@echo ... libs/strings/tasks/outputReversedString.i
 	@echo ... libs/strings/tasks/outputReversedString.s
+	@echo ... libs/strings/tasks/printWordBeforeFirstWordWithA.obj
+	@echo ... libs/strings/tasks/printWordBeforeFirstWordWithA.i
+	@echo ... libs/strings/tasks/printWordBeforeFirstWordWithA.s
 	@echo ... libs/strings/tasks/removeExtraSpaces.obj
 	@echo ... libs/strings/tasks/removeExtraSpaces.i
 	@echo ... libs/strings/tasks/removeExtraSpaces.s
@@ -563,9 +593,6 @@ help:
 	@echo ... libs/strings/tasks/replaceDigitsBySpaces.obj
 	@echo ... libs/strings/tasks/replaceDigitsBySpaces.i
 	@echo ... libs/strings/tasks/replaceDigitsBySpaces.s
-	@echo ... libs/strings/tasks/void_printWordBeforeFirstWordWithA.obj
-	@echo ... libs/strings/tasks/void_printWordBeforeFirstWordWithA.i
-	@echo ... libs/strings/tasks/void_printWordBeforeFirstWordWithA.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

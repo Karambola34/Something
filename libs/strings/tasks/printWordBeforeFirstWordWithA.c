@@ -2,7 +2,7 @@
 // Created by averk on 08.03.2022.
 //
 
-#include "void printWordBeforeFirstWordWithA.h"
+#include "printWordBeforeFirstWordWithA.h"
 
 WordBeforeFirstWordWithAReturnCode getWordBeforeFirstWordWithA(char *s, char **beginWordBefore,
                                                                char **endWordBefore) {

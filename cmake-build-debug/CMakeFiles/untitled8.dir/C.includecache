@@ -18,13 +18,11 @@ limits.h
 stdbool.h
 -
 
-C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/void printWordBeforeFirstWordWithA.c
-void printWordBeforeFirstWordWithA.h
-C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/void printWordBeforeFirstWordWithA.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/lastWordInFirstStringInSecondString.c
+lastWordInFirstStringInSecondString.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/lastWordInFirstStringInSecondString.h
 
-C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/void printWordBeforeFirstWordWithA.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/lastWordInFirstStringInSecondString.h
 ../string_.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
-assert.h
--
 

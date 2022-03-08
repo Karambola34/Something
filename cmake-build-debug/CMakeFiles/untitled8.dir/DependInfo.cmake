@@ -18,11 +18,12 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getMixedString.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/getMixedString.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getStringWithReversedWords.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/getStringWithReversedWords.c.obj"
+  "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/lastWordInFirstStringInSecondString.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/outputReversedString.c.obj"
+  "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/printWordBeforeFirstWordWithA.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/removeExtraSpaces.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replaceDigitsBySpaces.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.obj"
-  "C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/void printWordBeforeFirstWordWithA.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj"
   "C:/Users/averk/CLionProjects/untitled8/main.c" "C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/CMakeFiles/untitled8.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

@@ -36,10 +36,18 @@ CMakeFiles/untitled8.dir/libs/strings/tasks/getStringWithReversedWords.c.obj: \
  ../libs/strings/string_.h \
  ../libs/strings/tasks/getStringWithReversedWords.c \
  ../libs/strings/tasks/getStringWithReversedWords.h
+CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.obj: \
+ ../libs/strings/string_.h \
+ ../libs/strings/tasks/lastWordInFirstStringInSecondString.c \
+ ../libs/strings/tasks/lastWordInFirstStringInSecondString.h
 CMakeFiles/untitled8.dir/libs/strings/tasks/outputReversedString.c.obj: \
  ../libs/strings/string_.h \
  ../libs/strings/tasks/outputReversedString.c \
  ../libs/strings/tasks/outputReversedString.h
+CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.obj: \
+ ../libs/strings/string_.h \
+ ../libs/strings/tasks/printWordBeforeFirstWordWithA.c \
+ ../libs/strings/tasks/printWordBeforeFirstWordWithA.h
 CMakeFiles/untitled8.dir/libs/strings/tasks/removeExtraSpaces.c.obj: \
  ../libs/strings/string_.h \
  ../libs/strings/tasks/removeExtraSpaces.c \
@@ -52,10 +60,6 @@ CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.obj: \
  ../libs/strings/string_.h \
  ../libs/strings/tasks/replaceDigitsBySpaces.c \
  ../libs/strings/tasks/replaceDigitsBySpaces.h
-CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj: \
- ../libs/strings/string_.h \
- ../libs/strings/tasks/void\ printWordBeforeFirstWordWithA.c \
- ../libs/strings/tasks/void\ printWordBeforeFirstWordWithA.h
 CMakeFiles/untitled8.dir/main.c.obj: \
  ../libs/strings/string_.h \
  ../libs/strings/tasks/amountOfPalindromes.h \
@@ -63,9 +67,10 @@ CMakeFiles/untitled8.dir/main.c.obj: \
  ../libs/strings/tasks/digitToStartTransform.h \
  ../libs/strings/tasks/getMixedString.h \
  ../libs/strings/tasks/getStringWithReversedWords.h \
+ ../libs/strings/tasks/lastWordInFirstStringInSecondString.h \
  ../libs/strings/tasks/outputReversedString.h \
+ ../libs/strings/tasks/printWordBeforeFirstWordWithA.h \
  ../libs/strings/tasks/removeExtraSpaces.h \
  ../libs/strings/tasks/removeNonLetters.h \
  ../libs/strings/tasks/replaceDigitsBySpaces.h \
- ../libs/strings/tasks/void\ printWordBeforeFirstWordWithA.h \
  ../main.c

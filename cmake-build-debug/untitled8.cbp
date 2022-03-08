@@ -134,10 +134,22 @@
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getStringWithReversedWords.h">
 			<Option target="untitled8"/>
 		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/lastWordInFirstStringInSecondString.c">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/lastWordInFirstStringInSecondString.h">
+			<Option target="untitled8"/>
+		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.c">
 			<Option target="untitled8"/>
 		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.h">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/printWordBeforeFirstWordWithA.c">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/printWordBeforeFirstWordWithA.h">
 			<Option target="untitled8"/>
 		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.c">
@@ -156,12 +168,6 @@
 			<Option target="untitled8"/>
 		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replaceDigitsBySpaces.h">
-			<Option target="untitled8"/>
-		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/void printWordBeforeFirstWordWithA.c">
-			<Option target="untitled8"/>
-		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/void printWordBeforeFirstWordWithA.h">
 			<Option target="untitled8"/>
 		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/main.c">

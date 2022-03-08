@@ -20,6 +20,9 @@ add_library (str string/string_.h string/string_.c
         string/tasks/getMixedString.h
         string/tasks/getStringWithReversedWords.h
         string/tasks/printWordBeforeFirstWordWithA.h
+        string/tasks/printWordBeforeFirstWordWithA.h
+        string/tasks/lastWordInFirstStringInSecondString.h
+
 
         #...
         #< файл с решением задачи >

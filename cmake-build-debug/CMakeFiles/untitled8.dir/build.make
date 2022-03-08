@@ -260,18 +260,31 @@ CMakeFiles/untitled8.dir/libs/strings/tasks/getStringWithReversedWords.c.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled8.dir/libs/strings/tasks/getStringWithReversedWords.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\averk\CLionProjects\untitled8\libs\strings\tasks\getStringWithReversedWords.c -o CMakeFiles\untitled8.dir\libs\strings\tasks\getStringWithReversedWords.c.s
 
-CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj: CMakeFiles/untitled8.dir/flags.make
-CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj: ../libs/strings/tasks/void\ printWordBeforeFirstWordWithA.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\averk\CLionProjects\untitled8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\untitled8.dir\libs\strings\tasks\void_printWordBeforeFirstWordWithA.c.obj -c "C:\Users\averk\CLionProjects\untitled8\libs\strings\tasks\void printWordBeforeFirstWordWithA.c"
+CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.obj: CMakeFiles/untitled8.dir/flags.make
+CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.obj: ../libs/strings/tasks/printWordBeforeFirstWordWithA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\averk\CLionProjects\untitled8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\untitled8.dir\libs\strings\tasks\printWordBeforeFirstWordWithA.c.obj -c C:\Users\averk\CLionProjects\untitled8\libs\strings\tasks\printWordBeforeFirstWordWithA.c
 
-CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\averk\CLionProjects\untitled8\libs\strings\tasks\void printWordBeforeFirstWordWithA.c" > CMakeFiles\untitled8.dir\libs\strings\tasks\void_printWordBeforeFirstWordWithA.c.i
+CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\averk\CLionProjects\untitled8\libs\strings\tasks\printWordBeforeFirstWordWithA.c > CMakeFiles\untitled8.dir\libs\strings\tasks\printWordBeforeFirstWordWithA.c.i
 
-CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\averk\CLionProjects\untitled8\libs\strings\tasks\void printWordBeforeFirstWordWithA.c" -o CMakeFiles\untitled8.dir\libs\strings\tasks\void_printWordBeforeFirstWordWithA.c.s
+CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\averk\CLionProjects\untitled8\libs\strings\tasks\printWordBeforeFirstWordWithA.c -o CMakeFiles\untitled8.dir\libs\strings\tasks\printWordBeforeFirstWordWithA.c.s
+
+CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.obj: CMakeFiles/untitled8.dir/flags.make
+CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.obj: ../libs/strings/tasks/lastWordInFirstStringInSecondString.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\averk\CLionProjects\untitled8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\untitled8.dir\libs\strings\tasks\lastWordInFirstStringInSecondString.c.obj -c C:\Users\averk\CLionProjects\untitled8\libs\strings\tasks\lastWordInFirstStringInSecondString.c
+
+CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\averk\CLionProjects\untitled8\libs\strings\tasks\lastWordInFirstStringInSecondString.c > CMakeFiles\untitled8.dir\libs\strings\tasks\lastWordInFirstStringInSecondString.c.i
+
+CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\averk\CLionProjects\untitled8\libs\strings\tasks\lastWordInFirstStringInSecondString.c -o CMakeFiles\untitled8.dir\libs\strings\tasks\lastWordInFirstStringInSecondString.c.s
 
 # Object files for target untitled8
 untitled8_OBJECTS = \
@@ -290,7 +303,8 @@ untitled8_OBJECTS = \
 "CMakeFiles/untitled8.dir/libs/strings/tasks/amountOfPalindromes.c.obj" \
 "CMakeFiles/untitled8.dir/libs/strings/tasks/getMixedString.c.obj" \
 "CMakeFiles/untitled8.dir/libs/strings/tasks/getStringWithReversedWords.c.obj" \
-"CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj"
+"CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.obj" \
+"CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.obj"
 
 # External object files for target untitled8
 untitled8_EXTERNAL_OBJECTS =
@@ -310,12 +324,13 @@ untitled8.exe: CMakeFiles/untitled8.dir/libs/strings/tasks/outputReversedString.
 untitled8.exe: CMakeFiles/untitled8.dir/libs/strings/tasks/amountOfPalindromes.c.obj
 untitled8.exe: CMakeFiles/untitled8.dir/libs/strings/tasks/getMixedString.c.obj
 untitled8.exe: CMakeFiles/untitled8.dir/libs/strings/tasks/getStringWithReversedWords.c.obj
-untitled8.exe: CMakeFiles/untitled8.dir/libs/strings/tasks/void_printWordBeforeFirstWordWithA.c.obj
+untitled8.exe: CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.obj
+untitled8.exe: CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.obj
 untitled8.exe: CMakeFiles/untitled8.dir/build.make
 untitled8.exe: CMakeFiles/untitled8.dir/linklibs.rsp
 untitled8.exe: CMakeFiles/untitled8.dir/objects1.rsp
 untitled8.exe: CMakeFiles/untitled8.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\averk\CLionProjects\untitled8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C executable untitled8.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\averk\CLionProjects\untitled8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable untitled8.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\untitled8.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
