@@ -8,7 +8,6 @@
 #include  "../string_.h"
 
 
-
 // возвращает значение 'истина', если слово  является палиндромом, начиная с begin и заканчивая end
 // иначе возвращает значение 'ложь'
 int isPalindrome(char *begin, char *end) {
@@ -30,7 +29,7 @@ int amountOfPalindromes(char *s) {
     char *commaPosition = find(begin, end, ',');
     while (*commaPosition != *end) {
         begin = findNonSpace(begin);
-        amountOfPalindromes += isPalindrome(begin, commaPosition );
+        amountOfPalindromes += isPalindrome(begin, commaPosition);
         begin = commaPosition + 1;
         commaPosition = find(begin, end, ',');
         if (*commaPosition == *end) {

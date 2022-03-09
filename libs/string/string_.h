@@ -31,9 +31,9 @@ typedef struct BagOfWords {
     size_t size;
 } BagOfWords;
 
-BagOfWords _bag ;
+BagOfWords _bag;
 
-BagOfWords _bag2 ;
+BagOfWords _bag2;
 
 // возвращает количество символов в строке, начиная с адреса begin
 size_t strlen_(const char *begin);

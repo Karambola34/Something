@@ -98,49 +98,49 @@
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/data_structures/vector/vector.h">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.c">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/string_.c">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/string_.h">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/amountOfPalindromes.h">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/amountOfPalindromes.h">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.h">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/areWordsOrdered.h">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/digitToStartTransform.h">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getMixedString.h">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/getMixedString.h">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getStringWithReversedWords.h">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/getStringWithReversedWords.h">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/hasEqualWords.h">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/hasEqualWords.h">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/lastWordInFirstStringInSecondString.h">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/lastWordInFirstStringInSecondString.h">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.h">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/outputReversedString.h">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/printWordBeforeFirstWordWithA.h">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/printWordBeforeFirstWordWithA.h">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.h">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/removeExtraSpaces.h">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/removeNonLetters.h">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replace.h">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/replace.h">
 			<Option target="untitled8"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replaceDigitsBySpaces.h">
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/replaceDigitsBySpaces.h">
 			<Option target="untitled8"/>
 		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/main.c">

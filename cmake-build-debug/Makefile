@@ -224,29 +224,29 @@ libs/data_structures/vector/vector.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.s
 .PHONY : libs/data_structures/vector/vector.c.s
 
-libs/strings/string_.obj: libs/strings/string_.c.obj
-.PHONY : libs/strings/string_.obj
+libs/string/string_.obj: libs/string/string_.c.obj
+.PHONY : libs/string/string_.obj
 
 # target to build an object file
-libs/strings/string_.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/string_.c.obj
-.PHONY : libs/strings/string_.c.obj
+libs/string/string_.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/string/string_.c.obj
+.PHONY : libs/string/string_.c.obj
 
-libs/strings/string_.i: libs/strings/string_.c.i
-.PHONY : libs/strings/string_.i
+libs/string/string_.i: libs/string/string_.c.i
+.PHONY : libs/string/string_.i
 
 # target to preprocess a source file
-libs/strings/string_.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/string_.c.i
-.PHONY : libs/strings/string_.c.i
+libs/string/string_.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/string/string_.c.i
+.PHONY : libs/string/string_.c.i
 
-libs/strings/string_.s: libs/strings/string_.c.s
-.PHONY : libs/strings/string_.s
+libs/string/string_.s: libs/string/string_.c.s
+.PHONY : libs/string/string_.s
 
 # target to generate assembly for a file
-libs/strings/string_.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/strings/string_.c.s
-.PHONY : libs/strings/string_.c.s
+libs/string/string_.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/string/string_.c.s
+.PHONY : libs/string/string_.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
@@ -293,9 +293,9 @@ help:
 	@echo ... libs/data_structures/vector/vector.obj
 	@echo ... libs/data_structures/vector/vector.i
 	@echo ... libs/data_structures/vector/vector.s
-	@echo ... libs/strings/string_.obj
-	@echo ... libs/strings/string_.i
-	@echo ... libs/strings/string_.s
+	@echo ... libs/string/string_.obj
+	@echo ... libs/string/string_.i
+	@echo ... libs/string/string_.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

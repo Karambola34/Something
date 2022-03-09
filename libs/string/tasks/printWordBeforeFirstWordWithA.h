@@ -16,7 +16,6 @@ typedef enum WordBeforeFirstWordWithAReturnCode {
 } WordBeforeFirstWordWithAReturnCode;
 
 
-
 // возвращает значение EMPTY_STRING в строке s нет слов,
 // FIRST_WORD_WITH_A если слово содержащее "a" первое, WORD_FOUND если перед словом, содержащим "a"
 // есть другое слово, начинающееся с beginWordBefore и заканчивающееся endWordBefore,
@@ -59,13 +58,13 @@ void testAll_getWordBeforeFirstWordWithA() {
     char *beginWord, *endWord;
 
     char s1[] = "";
-    assert(getWordBeforeFirstWordWithA(s1, &beginWord, &endWord)== EMPTY_STRING);
+    assert(getWordBeforeFirstWordWithA(s1, &beginWord, &endWord) == EMPTY_STRING);
 
     char s2[] = " ABC";
-    assert(getWordBeforeFirstWordWithA(s2, &beginWord, &endWord)== FIRST_WORD_WITH_A);
+    assert(getWordBeforeFirstWordWithA(s2, &beginWord, &endWord) == FIRST_WORD_WITH_A);
 
     char s3[] = "BC A";
-    assert(getWordBeforeFirstWordWithA(s3, &beginWord, &endWord)== WORD_FOUND);
+    assert(getWordBeforeFirstWordWithA(s3, &beginWord, &endWord) == WORD_FOUND);
     char got[MAX_WORD_SIZE];
     copy(beginWord, endWord, got);
     got[endWord - beginWord] = '\0';

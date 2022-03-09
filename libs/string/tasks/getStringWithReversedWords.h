@@ -37,8 +37,9 @@ void test_getStringWithoutWords() {
     ASSERT_STRING("", s);
 }
 
-void test_getStringWithReversedWords(){
+void test_getStringWithReversedWords() {
     test_getStringWithWords();
     test_getStringWithoutWords();
 }
+
 #endif //UNTITLED8_GETSTRINGWITHREVERSEDWORDS_H

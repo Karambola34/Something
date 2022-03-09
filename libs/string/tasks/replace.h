@@ -25,7 +25,7 @@ void replace(char *source, char *w1, char *w2) {
     while (*readPtr != '\0') {
         if (*readPtr == *word1.begin) {
             getWord(readPtr, &searchingWord);
-            if (getWord(readPtr, &searchingWord)&& areWordsEqual(word1, searchingWord) <= 0) {
+            if (getWord(readPtr, &searchingWord) && areWordsEqual(word1, searchingWord) <= 0) {
                 copy(word2.begin, word2.end, recPtr);
                 recPtr += w2Size;
                 readPtr += w1Size;
@@ -38,12 +38,13 @@ void replace(char *source, char *w1, char *w2) {
     *recPtr = '\0';
 }
 
-void test_replace(){
-    char s[]="zero zero one one two three one";
-    char s1[]="zero";
-    char s2[]="one";
+void test_replace() {
+    char s[] = "zero zero one one two three one";
+    char s1[] = "zero";
+    char s2[] = "one";
 
-    replace(s,s1,s2);
-    ASSERT_STRING("one one one one two three one",s);
+    replace(s, s1, s2);
+    ASSERT_STRING("one one one one two three one", s);
 }
+
 #endif //UNTITLED8_REPLACE_H
