@@ -16,50 +16,6 @@ CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj: \
 CMakeFiles/untitled8.dir/libs/strings/string_.c.obj: \
  ../libs/strings/string_.c \
  ../libs/strings/string_.h
-CMakeFiles/untitled8.dir/libs/strings/tasks/amountOfPalindromes.c.obj: \
- ../libs/strings/string_.h \
- ../libs/strings/tasks/amountOfPalindromes.c \
- ../libs/strings/tasks/amountOfPalindromes.h
-CMakeFiles/untitled8.dir/libs/strings/tasks/areWordsOrdered.c.obj: \
- ../libs/strings/string_.h \
- ../libs/strings/tasks/areWordsOrdered.c \
- ../libs/strings/tasks/areWordsOrdered.h
-CMakeFiles/untitled8.dir/libs/strings/tasks/digitToStartTransform.c.obj: \
- ../libs/strings/string_.h \
- ../libs/strings/tasks/digitToStartTransform.c \
- ../libs/strings/tasks/digitToStartTransform.h
-CMakeFiles/untitled8.dir/libs/strings/tasks/getMixedString.c.obj: \
- ../libs/strings/string_.h \
- ../libs/strings/tasks/getMixedString.c \
- ../libs/strings/tasks/getMixedString.h
-CMakeFiles/untitled8.dir/libs/strings/tasks/getStringWithReversedWords.c.obj: \
- ../libs/strings/string_.h \
- ../libs/strings/tasks/getStringWithReversedWords.c \
- ../libs/strings/tasks/getStringWithReversedWords.h
-CMakeFiles/untitled8.dir/libs/strings/tasks/lastWordInFirstStringInSecondString.c.obj: \
- ../libs/strings/string_.h \
- ../libs/strings/tasks/lastWordInFirstStringInSecondString.c \
- ../libs/strings/tasks/lastWordInFirstStringInSecondString.h
-CMakeFiles/untitled8.dir/libs/strings/tasks/outputReversedString.c.obj: \
- ../libs/strings/string_.h \
- ../libs/strings/tasks/outputReversedString.c \
- ../libs/strings/tasks/outputReversedString.h
-CMakeFiles/untitled8.dir/libs/strings/tasks/printWordBeforeFirstWordWithA.c.obj: \
- ../libs/strings/string_.h \
- ../libs/strings/tasks/printWordBeforeFirstWordWithA.c \
- ../libs/strings/tasks/printWordBeforeFirstWordWithA.h
-CMakeFiles/untitled8.dir/libs/strings/tasks/removeExtraSpaces.c.obj: \
- ../libs/strings/string_.h \
- ../libs/strings/tasks/removeExtraSpaces.c \
- ../libs/strings/tasks/removeExtraSpaces.h
-CMakeFiles/untitled8.dir/libs/strings/tasks/removeNonLetters.c.obj: \
- ../libs/strings/string_.h \
- ../libs/strings/tasks/removeNonLetters.c \
- ../libs/strings/tasks/removeNonLetters.h
-CMakeFiles/untitled8.dir/libs/strings/tasks/replaceDigitsBySpaces.c.obj: \
- ../libs/strings/string_.h \
- ../libs/strings/tasks/replaceDigitsBySpaces.c \
- ../libs/strings/tasks/replaceDigitsBySpaces.h
 CMakeFiles/untitled8.dir/main.c.obj: \
  ../libs/strings/string_.h \
  ../libs/strings/tasks/amountOfPalindromes.h \
@@ -73,5 +29,6 @@ CMakeFiles/untitled8.dir/main.c.obj: \
  ../libs/strings/tasks/printWordBeforeFirstWordWithA.h \
  ../libs/strings/tasks/removeExtraSpaces.h \
  ../libs/strings/tasks/removeNonLetters.h \
+ ../libs/strings/tasks/replace.h \
  ../libs/strings/tasks/replaceDigitsBySpaces.h \
  ../main.c

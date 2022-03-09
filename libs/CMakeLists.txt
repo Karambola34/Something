@@ -22,6 +22,7 @@ add_library (str string/string_.h string/string_.c
         string/tasks/printWordBeforeFirstWordWithA.h
         string/tasks/printWordBeforeFirstWordWithA.h
         string/tasks/lastWordInFirstStringInSecondString.h
+        string/tasks/hasEqualWords.h
 
 
         #...

@@ -113,7 +113,7 @@ bool getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
     word->end = findNonSpaceReverse(rbegin, rend) + 1;
     if (word->end == rend)
         return false;
-    word->begin = findSpaceReverse(word->end, rend) + 1;
+    word->begin = findSpaceReverse(word->end-1, rend) + 1;
 
     return true;
 }

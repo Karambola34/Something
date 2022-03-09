@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="untitled8"/>
+		<Option title="project"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -12,6 +12,42 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="project">
+				<Option output="C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/averk/CLionProjects/untitled8/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 project"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="project/fast">
+				<Option output="C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/averk/CLionProjects/untitled8/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 project/fast"/>
 					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -27,11 +63,11 @@
 					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="untitled8">
-				<Option output="C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/untitled8.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="str">
+				<Option output="C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/libstr.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/averk/CLionProjects/untitled8/cmake-build-debug"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
@@ -39,17 +75,17 @@
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled8"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 str"/>
 					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="untitled8/fast">
-				<Option output="C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/untitled8.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="str/fast">
+				<Option output="C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/libstr.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/averk/CLionProjects/untitled8/cmake-build-debug"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
@@ -57,7 +93,7 @@
 					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled8/fast"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 str/fast"/>
 					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/averk/CLionProjects/untitled8/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -74,77 +110,50 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/algorithms/algorithm.c">
-			<Option target="untitled8"/>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/string_.c">
+			<Option target="str"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/algorithms/algorithm.h">
-			<Option target="untitled8"/>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/string_.h">
+			<Option target="str"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/algorithms/array/array.c">
-			<Option target="untitled8"/>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/amountOfPalindromes.h">
+			<Option target="str"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/algorithms/array/array.h">
-			<Option target="untitled8"/>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/areWordsOrdered.h">
+			<Option target="str"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/data_structures/matrix/matrix.c">
-			<Option target="untitled8"/>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/digitToStartTransform.h">
+			<Option target="str"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/data_structures/matrix/matrix.h">
-			<Option target="untitled8"/>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/getMixedString.h">
+			<Option target="str"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/data_structures/vector/vector.c">
-			<Option target="untitled8"/>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/getStringWithReversedWords.h">
+			<Option target="str"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/data_structures/vector/vector.h">
-			<Option target="untitled8"/>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/hasEqualWords.h">
+			<Option target="str"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.c">
-			<Option target="untitled8"/>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/hasPairOfWordsWithEqualLetterSet.h">
+			<Option target="str"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h">
-			<Option target="untitled8"/>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/lastWordInFirstStringInSecondString.h">
+			<Option target="str"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/amountOfPalindromes.h">
-			<Option target="untitled8"/>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/outputReversedString.h">
+			<Option target="str"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.h">
-			<Option target="untitled8"/>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/printWordBeforeFirstWordWithA.h">
+			<Option target="str"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/digitToStartTransform.h">
-			<Option target="untitled8"/>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/removeNonLetters.h">
+			<Option target="str"/>
 		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getMixedString.h">
-			<Option target="untitled8"/>
-		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/getStringWithReversedWords.h">
-			<Option target="untitled8"/>
-		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/hasEqualWords.h">
-			<Option target="untitled8"/>
-		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/lastWordInFirstStringInSecondString.h">
-			<Option target="untitled8"/>
-		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/outputReversedString.h">
-			<Option target="untitled8"/>
-		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/printWordBeforeFirstWordWithA.h">
-			<Option target="untitled8"/>
-		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.h">
-			<Option target="untitled8"/>
-		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h">
-			<Option target="untitled8"/>
-		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replace.h">
-			<Option target="untitled8"/>
-		</Unit>
-		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replaceDigitsBySpaces.h">
-			<Option target="untitled8"/>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/replaceDigitsBySpaces.h">
+			<Option target="str"/>
 		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/main.c">
-			<Option target="untitled8"/>
+			<Option target="project"/>
 		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

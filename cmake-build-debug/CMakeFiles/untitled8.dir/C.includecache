@@ -19,12 +19,12 @@ stdbool.h
 -
 assert.h
 -
+stdlib.h
+-
 
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/amountOfPalindromes.h
 ../string_.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
-assert.h
--
 
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/areWordsOrdered.h
 ../string_.h
@@ -59,14 +59,16 @@ C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/printWordBeforeFirstWordWithA.h
 ../string_.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
-assert.h
--
 
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeExtraSpaces.h
 ../string_.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
 
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/removeNonLetters.h
+../string_.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
+
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replace.h
 ../string_.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/string_.h
 
@@ -99,4 +101,6 @@ libs/strings/tasks/lastWordInFirstStringInSecondString.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/lastWordInFirstStringInSecondString.h
 libs/strings/tasks/hasEqualWords.h
 C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/hasEqualWords.h
+libs/strings/tasks/replace.h
+C:/Users/averk/CLionProjects/untitled8/libs/strings/tasks/replace.h
 
