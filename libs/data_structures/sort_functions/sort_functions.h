@@ -37,13 +37,16 @@ typedef struct GeneratingFunc {
     // используемое при выводе
 } GeneratingFunc;
 
-void swap(int *a,int *b);
+void swap(int *a, int *b);
 
-void bubbleSort(int *a,size_t size);
+void bubbleSort(int *a, size_t size);
 
-void selectionSort(int *a,size_t size);
+void selectionSort(int *a, size_t size);
 
-void insertionSort(int *a,  size_t size);
+void insertionSort(int *a, size_t size);
 
+void combsort(int *a, size_t size);
+
+void shellSort(int *a,size_t size);
 
 #endif
