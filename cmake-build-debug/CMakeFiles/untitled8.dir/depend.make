@@ -10,6 +10,9 @@ CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.obj: \
 CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.obj: \
  ../libs/data_structures/matrix/matrix.c \
  ../libs/data_structures/matrix/matrix.h
+CMakeFiles/untitled8.dir/libs/data_structures/sort_functions/sort_functions.c.obj: \
+ ../libs/data_structures/sort_functions/sort_functions.c \
+ ../libs/data_structures/sort_functions/sort_functions.h
 CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj: \
  ../libs/data_structures/vector/vector.c \
  ../libs/data_structures/vector/vector.h
@@ -17,18 +20,6 @@ CMakeFiles/untitled8.dir/libs/string/string_.c.obj: \
  ../libs/string/string_.c \
  ../libs/string/string_.h
 CMakeFiles/untitled8.dir/main.c.obj: \
- ../libs/string/string_.h \
- ../libs/string/tasks/amountOfPalindromes.h \
- ../libs/string/tasks/areWordsOrdered.h \
- ../libs/string/tasks/digitToStartTransform.h \
- ../libs/string/tasks/getMixedString.h \
- ../libs/string/tasks/getStringWithReversedWords.h \
- ../libs/string/tasks/hasEqualWords.h \
- ../libs/string/tasks/lastWordInFirstStringInSecondString.h \
- ../libs/string/tasks/outputReversedString.h \
- ../libs/string/tasks/printWordBeforeFirstWordWithA.h \
- ../libs/string/tasks/removeExtraSpaces.h \
- ../libs/string/tasks/removeNonLetters.h \
- ../libs/string/tasks/replace.h \
- ../libs/string/tasks/replaceDigitsBySpaces.h \
+ ../libs/algorithms/array/array.h \
+ ../libs/data_structures/sort_functions/sort_functions.h \
  ../main.c

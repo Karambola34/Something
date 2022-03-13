@@ -92,6 +92,12 @@
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/data_structures/matrix/matrix.h">
 			<Option target="untitled8"/>
 		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/data_structures/sort_functions/sort_functions.c">
+			<Option target="untitled8"/>
+		</Unit>
+		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/data_structures/sort_functions/sort_functions.h">
+			<Option target="untitled8"/>
+		</Unit>
 		<Unit filename="C:/Users/averk/CLionProjects/untitled8/libs/data_structures/vector/vector.c">
 			<Option target="untitled8"/>
 		</Unit>

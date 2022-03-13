@@ -10,6 +10,9 @@ CMakeFiles/untitled8.dir/libs/algorithms/array/array.c.obj
 CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/data_structures/matrix/matrix.c
  C:/Users/averk/CLionProjects/untitled8/libs/data_structures/matrix/matrix.h
+CMakeFiles/untitled8.dir/libs/data_structures/sort_functions/sort_functions.c.obj
+ C:/Users/averk/CLionProjects/untitled8/libs/data_structures/sort_functions/sort_functions.c
+ C:/Users/averk/CLionProjects/untitled8/libs/data_structures/sort_functions/sort_functions.h
 CMakeFiles/untitled8.dir/libs/data_structures/vector/vector.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/data_structures/vector/vector.c
  C:/Users/averk/CLionProjects/untitled8/libs/data_structures/vector/vector.h
@@ -17,18 +20,6 @@ CMakeFiles/untitled8.dir/libs/string/string_.c.obj
  C:/Users/averk/CLionProjects/untitled8/libs/string/string_.c
  C:/Users/averk/CLionProjects/untitled8/libs/string/string_.h
 CMakeFiles/untitled8.dir/main.c.obj
- C:/Users/averk/CLionProjects/untitled8/libs/string/string_.h
- C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/amountOfPalindromes.h
- C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/areWordsOrdered.h
- C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/digitToStartTransform.h
- C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/getMixedString.h
- C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/getStringWithReversedWords.h
- C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/hasEqualWords.h
- C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/lastWordInFirstStringInSecondString.h
- C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/outputReversedString.h
- C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/printWordBeforeFirstWordWithA.h
- C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/removeExtraSpaces.h
- C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/removeNonLetters.h
- C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/replace.h
- C:/Users/averk/CLionProjects/untitled8/libs/string/tasks/replaceDigitsBySpaces.h
+ C:/Users/averk/CLionProjects/untitled8/libs/algorithms/array/array.h
+ C:/Users/averk/CLionProjects/untitled8/libs/data_structures/sort_functions/sort_functions.h
  C:/Users/averk/CLionProjects/untitled8/main.c

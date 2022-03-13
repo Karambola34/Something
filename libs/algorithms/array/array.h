@@ -2,6 +2,8 @@
 #define INC_ARRAY_H
 
 #include <stddef.h>
+#include <stdbool.h>
+
 
 // ввод массива data размера n
 void inputArray_(int *a, size_t n);
@@ -61,5 +63,13 @@ int countIf_(const int *a, size_t n, int (*predicate )(int));
 // функции-предикату deletePredicate, записывает в n новый размер
 // массива
 void deleteIf_(int *a, size_t *n, int (*deletePredicate )(int));
+
+void generateRandomArray(int *a,size_t size);
+
+void generateOrderedArray(int *a,size_t size);
+
+void generateOrderedBackwards(int *a,size_t size);
+
+bool isOrdered(int *a,size_t size);
 
 #endif

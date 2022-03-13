@@ -200,6 +200,30 @@ libs/data_structures/matrix/matrix.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/data_structures/matrix/matrix.c.s
 .PHONY : libs/data_structures/matrix/matrix.c.s
 
+libs/data_structures/sort_functions/sort_functions.obj: libs/data_structures/sort_functions/sort_functions.c.obj
+.PHONY : libs/data_structures/sort_functions/sort_functions.obj
+
+# target to build an object file
+libs/data_structures/sort_functions/sort_functions.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/data_structures/sort_functions/sort_functions.c.obj
+.PHONY : libs/data_structures/sort_functions/sort_functions.c.obj
+
+libs/data_structures/sort_functions/sort_functions.i: libs/data_structures/sort_functions/sort_functions.c.i
+.PHONY : libs/data_structures/sort_functions/sort_functions.i
+
+# target to preprocess a source file
+libs/data_structures/sort_functions/sort_functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/data_structures/sort_functions/sort_functions.c.i
+.PHONY : libs/data_structures/sort_functions/sort_functions.c.i
+
+libs/data_structures/sort_functions/sort_functions.s: libs/data_structures/sort_functions/sort_functions.c.s
+.PHONY : libs/data_structures/sort_functions/sort_functions.s
+
+# target to generate assembly for a file
+libs/data_structures/sort_functions/sort_functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled8.dir\build.make CMakeFiles/untitled8.dir/libs/data_structures/sort_functions/sort_functions.c.s
+.PHONY : libs/data_structures/sort_functions/sort_functions.c.s
+
 libs/data_structures/vector/vector.obj: libs/data_structures/vector/vector.c.obj
 .PHONY : libs/data_structures/vector/vector.obj
 
@@ -290,6 +314,9 @@ help:
 	@echo ... libs/data_structures/matrix/matrix.obj
 	@echo ... libs/data_structures/matrix/matrix.i
 	@echo ... libs/data_structures/matrix/matrix.s
+	@echo ... libs/data_structures/sort_functions/sort_functions.obj
+	@echo ... libs/data_structures/sort_functions/sort_functions.i
+	@echo ... libs/data_structures/sort_functions/sort_functions.s
 	@echo ... libs/data_structures/vector/vector.obj
 	@echo ... libs/data_structures/vector/vector.i
 	@echo ... libs/data_structures/vector/vector.s

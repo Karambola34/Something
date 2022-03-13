@@ -1,134 +1,91 @@
 
-#include "libs/string/tasks/removeNonLetters.h"
-#include "libs/string/tasks/removeExtraSpaces.h"
-#include "libs/string/tasks/digitToStartTransform.h"
-#include "libs/string/tasks/replaceDigitsBySpaces.h"
-#include "libs/string/tasks/areWordsOrdered.h"
-#include "libs/string/tasks/outputReversedString.h"
-#include "libs/string/tasks/amountOfPalindromes.h"
-#include "libs/string/tasks/getMixedString.h"
-#include "libs/string/tasks/getStringWithReversedWords.h"
-#include "libs/string/tasks/printWordBeforeFirstWordWithA.h"
-#include "libs/string/tasks/lastWordInFirstStringInSecondString.h"
-#include  "libs/string/tasks/hasEqualWords.h"
-#include  "libs/string/tasks/replace.h"
+#include "libs/data_structures/sort_functions/sort_functions.h"
+#include "libs/algorithms/array/array.h"
 
+void checkTime(void (*sortFunc )(int *, size_t),
+               void (*generateFunc )(int *, size_t),
+               size_t size, char *experimentName) {
+    static size_t runCounter = 1;
 
-static void test_strlen_() {
-    char s[] = "    coconut orange and cheese";
-    assert(strlen_(s) == 29);
+    // генерация последовательности
+    static int innerBuffer[100000];
+    generateFunc(innerBuffer, size);
+    printf("Run #% zu| ", runCounter++);
+    printf(" Name : %s\n", experimentName);
+    // замер времени
+    double time;
+    TIME_TEST
+    ({
+        sortFunc(innerBuffer, size);
+    }, time );
+// результаты замера
+    printf(" Status : ");
+    if (isOrdered(innerBuffer, size)) {
+        printf("OK! Time : %.3 f s.\n", time);
+
+        // запись в файл
+        char filename[256];
+        sprintf(filename, "./data/%s.csv", filename);
+        FILE *f = fopen(filename, "a");
+        if (f == NULL) {
+            printf(" FileOpenError %s", filename);
+            exit(1);
+        }
+        fprintf(f, "%zu; %.3f\n", size, time);
+        fclose(f);
+    } else {
+        printf(" Wrong !\n");
+
+        // вывод массива, который не смог быть отсортирован
+        outputArray_(innerBuffer, size);
+
+        exit(1);
+    }
 }
 
-static void test_findNonSpace() {
-    char s[] = "\t  cake   pancake";
-    char *res = findNonSpace(s);
-    assert(*res == 'c');
-    assert(res == &s[3]);
+void timeExperiment() {
+    // описание функций сортировки
+    SortFunc sorts[] = {
+            {selectionSort, " selectionSort "},
+            {insertionSort, " insertionSort "},
+            // вы добавите свои сортировки
+    };
+    const unsigned FUNCS_N = ARRAY_SIZE
+    (sorts);
+
+    // описание функций генерации
+    GeneratingFunc generatingFuncs[] = {
+            // генерируется случайный массив
+            {generateRandomArray,      " random "},
+            // генерируется массив 0, 1, 2, ..., n - 1
+            {generateOrderedArray,     " ordered "},
+            // генерируется массив n - 1, n - 2, ..., 0
+            {generateOrderedBackwards, " orderedBackwards "}
+    };
+    const unsigned CASES_N = ARRAY_SIZE
+    (generatingFuncs);
+
+    // запись статистики в файл
+    for (size_t size = 10000; size <= 100000; size += 10000) {
+        printf(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n");
+        printf(" Size : %d\n", size);
+        for (int i = 0; i < FUNCS_N; i++) {
+            for (int j = 0; j < CASES_N; j++) {
+                // генерация имени файла
+                static char filename[128];
+                sprintf(filename, "%s_% s_time ",
+                        sorts[i].name, generatingFuncs[j].name);
+                checkTime(sorts[i].sort,
+                          generatingFuncs[j].generate,
+                          size, filename);
+            }
+        }
+        printf("\n");
+    }
 }
-
-static void test_findSpace() {
-    char s[] = "oneoneone\t    oneoneone";
-    char *res = findSpace(s);
-    assert(res == &s[9]);
-}
-
-static void test_findNonSpaceReverse() {
-    char s[] = "cookie   ";
-    char *res = findNonSpaceReverse(&s[8], &s[-1]);
-    assert(*res == 'e');
-    assert(res == &s[5]);
-}
-
-static void test_findSpaceReverse() {
-    char s[] = "lets count letters";
-    char *res = findSpaceReverse(&s[17], &s[-1]);
-    assert(res == &s[10]);
-}
-
-static void test_EqualStrcmp() {
-    char s1[] = "picnic";
-    char s2[] = "picnic";
-    assert(strcmp(s1, s2) == 0);
-}
-
-static void test_firstBiggerStrcmp() {
-    char s1[] = "alphabet";
-    char s2[] = "barricade";
-    assert(strcmp(s1, s2) == -1);
-}
-
-static void test_secondBiggerStrcmp() {
-    char s1[] = "blaster";
-    char s2[] = "able";
-    assert(strcmp(s1, s2) == 1);
-}
-
-
-static void test_copy() {
-    char s1[] = "1234567";
-    char s2[] = "";
-    char *begin = s2;
-    copy(s1, &s1[7], s2);
-    char *end = begin + strlen_(s1);
-    *end = '\0';
-    ASSERT_STRING("1234567", s2);
-}
-
-static void test_copyIf() {
-    char s1[] = "123gh45 6";
-    char s2[6];
-    char *begin = s2;
-    copyIf(s1, &s1[9], s2, isdigit);
-    char *end = begin + 6;
-    *end = '\0';
-    ASSERT_STRING("123456", s2);
-}
-
-static void test_copyIfReverse() {
-    char s1[] = "1 2 3 4 fdfdfd56";
-    char s2[] = "";
-    copyIfReverse(&s1[16], s1, s2, isdigit);
-    ASSERT_STRING("654321", s2);
-}
-
-static void test_getEndOfString() {
-    char s[6] = "12345";
-    char *res = findNonSpace(s);
-    assert(res == &s[6]);
-}
-
-void test_string_() {
-    test_strlen_();
-    test_findNonSpace();
-    test_findSpace();
-    test_findNonSpaceReverse();
-    test_findSpaceReverse();
-    test_EqualStrcmp();
-    test_firstBiggerStrcmp();
-    test_secondBiggerStrcmp();
-    test_copy();
-    test_copyIf();
-    test_copyIfReverse();
-    test_getEndOfString();
-}
-
 
 int main() {
-    test_removeNonLetters();
-    test_removeExtraSpaces();
-    test_digitToStartLettersFirstDigitsSecond();
-    test_replaceDigitsBySpaces();
-    test_areWordsOrdered();
-    pseudoTestOutputReversedString();
-    test_amountOfPalindromes();
-    test_getMixedString();
-    test_getStringWithReversedWords();
-    testAll_getWordBeforeFirstWordWithA();
-    test_lastWordInFirstStringInSecondString();
-    test_hasEqualWords();
-    test_replace();
-    test_string_();
-
+    timeExperiment();
 
     return 0;
 }

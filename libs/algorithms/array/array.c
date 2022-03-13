@@ -2,6 +2,8 @@
 #include <limits.h>
 #include <assert.h>
 #include "array.h"
+#include <stdlib.h>
+#include <time.h>
 
 
 void inputArray_(int *const a, const size_t n) {
@@ -129,3 +131,27 @@ size_t binarySearchMoreOrEqual_(const int *a, size_t n, int x) {
     }
     return right;
 }
+
+void generateRandomArray(int *a, size_t size) {
+    srand(time(0));
+    for (size_t i = 0; i < size; i++)
+        a[i] = rand();
+}
+
+void generateOrderedArray(int *a, size_t size) {
+    for (size_t i = 0; i < size; i++)
+        a[i] = i;
+}
+
+void generateOrderedBackwards(int *a, size_t size) {
+    for (int i = size - 1; i >= 0; i--)
+        a[i] = i;
+}
+
+bool isOrdered(int *a, size_t size) {
+    for (size_t i = 1; i < size; i++)
+        if (a[i] < a[i - 1])
+            return false;
+    return true;
+}
+
