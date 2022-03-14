@@ -23,11 +23,20 @@
 
 // функция сортировки
 typedef struct SortFunc {
-    void (*sort )(int *a, size_t n); // указатель на функцию
-    // сортировки
+    void (*sort )(int *a, size_t n); // указатель на функцию сортировки
+
     char name[64]; // имя сортировки,
     // используемое при выводе
 } SortFunc;
+
+// функция сортировки
+typedef struct SortFuncNComps {
+    unsigned long long (*sort )(int *a, size_t n); // указатель на функцию
+
+    char name[64]; // имя сортировки,
+    // используемое при выводе
+    long long nComps;
+} SortFuncNComps;
 
 // функция генерации
 typedef struct GeneratingFunc {
@@ -47,9 +56,21 @@ void insertionSort(int *a, size_t size);
 
 void combSort(int *a, size_t size);
 
-void shellSort(int *a,size_t size);
+void shellSort(int *a, size_t size);
 
-void radixSort(int *a, size_t n);
+void radixSort(int *a, size_t size);
+
+unsigned long long getBubbleSortNComps(int *a, size_t size);
+
+unsigned long long getSelectionSortNComps(int *a, size_t size);
+
+unsigned long long getInsertionSortNComps(int *a, size_t size);
+
+unsigned long long getCombSortNComps(int *a, size_t size);
+
+unsigned long long getShellSortNComps(int *a, size_t size);
+
+unsigned long long getRadixSortNComps(int *a, size_t size);
 
 
 #endif
