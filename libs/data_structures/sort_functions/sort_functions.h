@@ -45,8 +45,11 @@ void selectionSort(int *a, size_t size);
 
 void insertionSort(int *a, size_t size);
 
-void combsort(int *a, size_t size);
+void combSort(int *a, size_t size);
 
 void shellSort(int *a,size_t size);
+
+void radixSort(int *a, size_t n);
+
 
 #endif

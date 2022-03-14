@@ -16,16 +16,17 @@ void checkTime(void (*sortFunc )(int *, size_t),
     double time;
     TIME_TEST
     ({
-        sortFunc(innerBuffer, size);
-    }, time );
+         sortFunc(innerBuffer, size);
+     }, time);
 // результаты замера
     printf(" Status : ");
     if (isOrdered(innerBuffer, size)) {
-        printf("OK! Time : %.3 f s.\n", time);
+        printf("OK! Time : %.3f s.\n", time);
+
 
         // запись в файл
         char filename[256];
-        sprintf(filename, "./data/%s.csv", filename);
+        sprintf(filename, "./data/%s.csv", experimentName);
         FILE *f = fopen(filename, "a");
         if (f == NULL) {
             printf(" FileOpenError %s", filename);
@@ -48,10 +49,14 @@ void timeExperiment() {
     SortFunc sorts[] = {
             {selectionSort, " selectionSort "},
             {insertionSort, " insertionSort "},
+            {bubbleSort,    " bubbleSort"},
+            {combSort,      " combSort "},
+            {shellSort,     " shellSort "},
+            {radixSort,     " radixSort"}
             // вы добавите свои сортировки
     };
     const unsigned FUNCS_N = ARRAY_SIZE
-    (sorts);
+                             (sorts);
 
     // описание функций генерации
     GeneratingFunc generatingFuncs[] = {
@@ -63,7 +68,7 @@ void timeExperiment() {
             {generateOrderedBackwards, " orderedBackwards "}
     };
     const unsigned CASES_N = ARRAY_SIZE
-    (generatingFuncs);
+                             (generatingFuncs);
 
     // запись статистики в файл
     for (size_t size = 10000; size <= 100000; size += 10000) {

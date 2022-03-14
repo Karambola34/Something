@@ -12,15 +12,15 @@ void swap(int *a, int *b) {
 
 
 void bubbleSort(int *a, size_t size) {
-    int isSorted;
-    for (size_t i = 0; i < size - 1 && isSorted; i++) {
-        isSorted = 1;
+    bool isSorted = false;
+    for (size_t i = 0; !isSorted && i < size - 1; i++) {
+        isSorted = true;
         for (size_t j = size - 1; j > i; j--)
             if (a[j - 1] > a[j]) {
+                isSorted = false;
 
                 swap(&a[j - 1], &a[j]);
 
-                isSorted = 0;
             }
     }
 }
@@ -48,7 +48,7 @@ void insertionSort(int *a, size_t size) {
     }
 }
 
-void combsort(int *a, size_t size) {
+void combSort(int *a, size_t size) {
     size_t step = size;
     int swapped = 1;
     while (step > 1 || swapped) {
@@ -76,4 +76,38 @@ void shellSort(int *a, size_t size) {
             }
             a[j] = a[i];
         }
+}
+
+int digit(int n, int constant, int N, int M) {
+    return (n >> (N * constant) & (M - 1));
+}
+
+static void radixSort_(int *left, int *right, int size) {
+    int k = (32 + size - 1) / size;
+
+    int M = 1 << size;
+    int newSize = right - left;
+    int *b = (int *) malloc(sizeof(int) * newSize);
+    int *c = (int *) malloc(sizeof(int) * M);
+
+    for (int i = 0; i < k; i++) {
+        for (int j = 0; j < M; j++)
+            c[j] = 0;
+        for (int *j = left; j < right; j++)
+            c[digit(*j, i, size, M)]++;
+        for (int j = 1; j < M; j++)
+            c[j] += c[j - 1];
+        for (int *j = right - 1; j >= left; j--)
+            b[--c[digit(*j, i, size, M)]] = *j;
+        int cur = 0;
+        for (int *j = left; j < right; j++)
+            *j = b[cur++];
+    }
+
+    free(b);
+    free(c);
+}
+
+void radixSort(int *a, size_t n) {
+    radixSort_(a, a + n, 8);
 }
