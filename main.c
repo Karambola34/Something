@@ -136,7 +136,7 @@ void NCompsExperiment() {
             {getShellSortNComps,     " getShellSortNComps "},
             {getRadixSortNComps,     " getRadixSortNComps "},
             {getCombSortNComps,      " getCombSortNComps"},
-            {getSelectionSortNComps, " getSelectionSortNComp "}
+
 
     };
 
@@ -175,7 +175,7 @@ void NCompsExperiment() {
 }
 
 int main() {
-//    timeExperiment();
+    timeExperiment();
     NCompsExperiment();
 
     return 0;

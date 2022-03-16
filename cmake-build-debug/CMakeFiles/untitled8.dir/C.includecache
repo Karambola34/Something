@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/averk/CLionProjects/untitled8/libs/data_structures/sort_functions/sort_functions.c
-sort_functions.h
-C:/Users/averk/CLionProjects/untitled8/libs/data_structures/sort_functions/sort_functions.h
+C:/Users/averk/CLionProjects/untitled8/libs/algorithms/array/array.h
+stddef.h
+-
+stdbool.h
+-
 
 C:/Users/averk/CLionProjects/untitled8/libs/data_structures/sort_functions/sort_functions.h
 stdlib.h
@@ -19,4 +21,10 @@ stdbool.h
 -
 time.h
 -
+
+C:/Users/averk/CLionProjects/untitled8/main.c
+libs/data_structures/sort_functions/sort_functions.h
+C:/Users/averk/CLionProjects/untitled8/libs/data_structures/sort_functions/sort_functions.h
+libs/algorithms/array/array.h
+C:/Users/averk/CLionProjects/untitled8/libs/algorithms/array/array.h
 

@@ -10,7 +10,7 @@ void swap(int *a, int *b) {
     *b = t;
 }
 
-
+//обменная сортировка массива a размера size
 void bubbleSort(int *a, size_t size) {
     bool isSorted = false;
     for (size_t i = 0; !isSorted && i < size - 1; i++) {
@@ -24,22 +24,24 @@ void bubbleSort(int *a, size_t size) {
     }
 }
 
+//возвращает число операций сравнения сортировки обменом массива a размера size
 unsigned long long getBubbleSortNComps(int *a, size_t size) {
     unsigned long long nComps = 0;
     bool isSorted = false;
-    for (size_t i = 0; ++nComps && !isSorted && i < size-1; i++) {
+    for (size_t i = 0; ++nComps && !isSorted && i < size - 1; i++) {
         isSorted = true;
         for (size_t j = size - 1; ++nComps && j > i; j--)
             if (++nComps && a[j - 1] > a[j]) {
                 isSorted = false;
 
-                swap(&a[j-1], &a[j]);
+                swap(&a[j - 1], &a[j]);
             }
     }
 
     return nComps;
 }
 
+//сортировка массива a размера size выбором
 void selectionSort(int *a, size_t size) {
     for (size_t i = 0; i < size; i++) {
         size_t min = i;
@@ -51,6 +53,7 @@ void selectionSort(int *a, size_t size) {
     }
 }
 
+//возвращает число операций сравнения сортировки выбором массива a размера size
 unsigned long long getSelectionSortNComps(int *a, size_t size) {
     unsigned long long nComps = 0;
     for (int i = 0; ++nComps && i < size; i++) {
@@ -68,6 +71,7 @@ unsigned long long getSelectionSortNComps(int *a, size_t size) {
     return nComps;
 }
 
+//сортировка вставками массива ф размера size
 void insertionSort(int *a, size_t size) {
     for (size_t i = 1; i < size; i++) {
         int t = a[i];
@@ -80,6 +84,7 @@ void insertionSort(int *a, size_t size) {
     }
 }
 
+//возвращает число операций сравнения сортировки вставками массива a размера size
 unsigned long long getInsertionSortNComps(int *a, size_t size) {
     unsigned long long nComps = 0;
     for (size_t i = 1; ++nComps && i < size; i++) {
@@ -95,6 +100,7 @@ unsigned long long getInsertionSortNComps(int *a, size_t size) {
     return nComps;
 }
 
+//сортировка 'расческой' массива a размера size
 void combSort(int *a, size_t size) {
     size_t step = size;
     int swapped = 1;
@@ -110,6 +116,8 @@ void combSort(int *a, size_t size) {
             }
     }
 }
+
+//возвращает число операций сравнения сортировки 'расческой' массива a размера size
 unsigned long long getCombSortNComps(int *a, const size_t size) {
     size_t step = size;
     int swapped = 1;
@@ -129,6 +137,7 @@ unsigned long long getCombSortNComps(int *a, const size_t size) {
     return nComps;
 }
 
+//сортировка Шелла массива a размера size
 void shellSort(int *a, size_t size) {
     for (size_t step = size / 2; step > 0; step /= 2)
         for (size_t i = step; i < size; i++) {
@@ -142,6 +151,7 @@ void shellSort(int *a, size_t size) {
         }
 }
 
+//возвращает число операций сравнения сортировки Шелла массива a размера size
 unsigned long long getShellSortNComps(int *a, size_t size) {
     unsigned long long nComps = 0;
     for (size_t step = size / 2; ++nComps && step > 0; step /= 2)
@@ -188,10 +198,12 @@ static void radixSort_(int *left, int *right, int size) {
     free(c);
 }
 
+//Цифровая сортировка массива a размера size
 void radixSort(int *a, size_t size) {
     radixSort_(a, a + size, 8);
 }
 
+//возвращает число операций сравнения цифровой сортировки массива a размера size
 static unsigned long long getRadixSortNComps_(int *left, int *right, int size) {
     int lim = (32 + size - 1) / size;
     int shiftAmount = 1 << size;
@@ -216,10 +228,11 @@ static unsigned long long getRadixSortNComps_(int *left, int *right, int size) {
 
     free(b);
     free(c);
+
+    return nComps;
 }
 
 
 unsigned long long getRadixSortNComps(int *a, const size_t size) {
-
     return getRadixSortNComps_(a, a + size, 8);
 }
