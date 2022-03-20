@@ -144,14 +144,16 @@ void generateOrderedArray(int *a, size_t size) {
 }
 
 void generateOrderedBackwards(int *a, size_t size) {
-    for (int i = size - 1; i >= 0; i--)
-        a[i] = i;
+    for (int i = size - 1,j=0; i >= 0; i--,j++)
+        a[j] = i;
 }
 
 bool isOrdered(int *a, size_t size) {
     for (size_t i = 1; i < size; i++)
         if (a[i] < a[i - 1])
+
             return false;
+
     return true;
 }
 

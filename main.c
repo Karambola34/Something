@@ -47,12 +47,12 @@ void checkTime(void (*sortFunc )(int *, size_t),
 void timeExperiment() {
     // описание функций сортировки
     SortFunc sorts[] = {
-            {selectionSort, " selectionSort "},
-            {insertionSort, " insertionSort "},
-            {bubbleSort,    " bubbleSort"},
-            {combSort,      " combSort "},
+//            {selectionSort, " selectionSort "},
+//            {insertionSort, " insertionSort "},
+//            {bubbleSort,    " bubbleSort"},
+//            {combSort,      " combSort "},
             {shellSort,     " shellSort "},
-            {radixSort,     " radixSort"}
+//            {radixSort,     " radixSort"}
             // вы добавите свои сортировки
     };
     const unsigned FUNCS_N = ARRAY_SIZE
@@ -63,7 +63,7 @@ void timeExperiment() {
             // генерируется случайный массив
             {generateRandomArray,      " random "},
             // генерируется массив 0, 1, 2, ..., n - 1
-            {generateOrderedArray,     " ordered "},
+//            {generateOrderedArray,     " ordered "},
             // генерируется массив n - 1, n - 2, ..., 0
             {generateOrderedBackwards, " orderedBackwards "}
     };
@@ -130,12 +130,12 @@ void checkNComps(unsigned long long (*sortFunc )(int *, size_t),
 void NCompsExperiment() {
     // описание функций сортировки
     SortFuncNComps sorts[] = {
-            {getBubbleSortNComps,    " getBubbleSortNComps "},
-            {getSelectionSortNComps, " getSelectionSortNComps "},
-            {getInsertionSortNComps, " getInsertionSortNComps "},
+//            {getBubbleSortNComps,    " getBubbleSortNComps "},
+//            {getSelectionSortNComps, " getSelectionSortNComps "},
+//            {getInsertionSortNComps, " getInsertionSortNComps "},
             {getShellSortNComps,     " getShellSortNComps "},
-            {getRadixSortNComps,     " getRadixSortNComps "},
-            {getCombSortNComps,      " getCombSortNComps"},
+//            {getRadixSortNComps,     " getRadixSortNComps "},
+//            {getCombSortNComps,      " getCombSortNComps"},
 
 
     };
@@ -175,8 +175,10 @@ void NCompsExperiment() {
 }
 
 int main() {
-    timeExperiment();
+
+//    timeExperiment();
     NCompsExperiment();
+
 
     return 0;
 }

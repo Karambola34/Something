@@ -12,12 +12,9 @@ void swap(int *a, int *b) {
 
 //обменная сортировка массива a размера size
 void bubbleSort(int *a, size_t size) {
-    bool isSorted = false;
-    for (size_t i = 0; !isSorted && i < size - 1; i++) {
-        isSorted = true;
+    for (size_t i = 0; i < size - 1; i++) {
         for (size_t j = size - 1; j > i; j--)
             if (a[j - 1] > a[j]) {
-                isSorted = false;
 
                 swap(&a[j - 1], &a[j]);
             }
@@ -139,34 +136,25 @@ unsigned long long getCombSortNComps(int *a, const size_t size) {
 
 //сортировка Шелла массива a размера size
 void shellSort(int *a, size_t size) {
-    for (size_t step = size / 2; step > 0; step /= 2)
-        for (size_t i = step; i < size; i++) {
-            size_t j = i;
-            while (j >= step) {
-                if (a[i] < a[j - step])
-                    a[j] = a[j - step];
-                j -= step;
-            }
-            a[j] = a[i];
-        }
+    for (int step = size / 2; step > 0; step /= 2)
+        for (int i = step; i < size; ++i)
+            for (int j = i - step; j >= 0 && a[j] > a[j + step]; j -= step)
+
+                swap(&a[j], &a[j + step]);
 }
+
 
 //возвращает число операций сравнения сортировки Шелла массива a размера size
-unsigned long long getShellSortNComps(int *a, size_t size) {
+unsigned long long getShellSortNComps(int *a, const size_t size) {
     unsigned long long nComps = 0;
-    for (size_t step = size / 2; ++nComps && step > 0; step /= 2)
-        for (size_t i = step; ++nComps && i < size; i++) {
-            size_t j = i;
-            while (++nComps && j >= step) {
-                if (a[i] < a[j - step])
-                    a[j] = a[j - step];
-                j -= step;
-            }
+    for (int step = size / 2; ++nComps && step > 0; step /= 2)
+        for (int i = step; ++nComps && i < size; ++i)
+            for (int j = i - step; ++nComps && j >= 0 && ++nComps && a[j] > a[j + step]; j -= step)
+                swap(&a[j], &a[j + step]);
 
-            a[j] = a[i];
-        }
     return nComps;
 }
+
 
 int digit(int n, int constant, size_t size, int shiftAmount) {
     return (n >> (size * constant) & (shiftAmount - 1));
